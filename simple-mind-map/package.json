@@ -1,6 +1,6 @@
 {
-  "name": "simple-mind-map",
-  "version": "0.2.21",
+  "name": "@emircanerkul/mind-map",
+  "version": "1.0.3",
   "description": "一个简单的web在线思维导图",
   "authors": [
     {
@@ -10,8 +10,15 @@
     {
       "name": "理想青年实验室",
       "url": "http://lxqnsys.com/"
+    },
+    {
+      "name": "Emircan ERKUL",
+      "url": "contact@emircanerkul.com"
     }
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
