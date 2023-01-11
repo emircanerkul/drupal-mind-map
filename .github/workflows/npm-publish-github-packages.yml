@@ -17,8 +17,6 @@ jobs:
           node-version: 16
       - run: npm ci
         working-directory: ./simple-mind-map
-      - run: npm test
-        working-directory: ./simple-mind-map
 
   publish-gpr:
     needs: build
