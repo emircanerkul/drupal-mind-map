@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import { nodeIconList } from 'simple-mind-map/src/svg/icons'
+import { nodeIconList } from '@emircanerkul/simple-mind-map/src/svg/icons'
 
 /**
  * @Author: 王林

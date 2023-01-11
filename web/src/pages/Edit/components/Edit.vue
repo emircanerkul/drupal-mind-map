@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import MindMap from 'simple-mind-map'
+import MindMap from '@emircanerkul/simple-mind-map'
 import Outline from './Outline'
 import Theme from './Theme'
 import Structure from './Structure'

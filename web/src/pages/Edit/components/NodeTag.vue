@@ -39,7 +39,7 @@
 </template>
 
 <script>
-import { tagColorList } from 'simple-mind-map/src/utils/constant'
+import { tagColorList } from '@emircanerkul/simple-mind-map/src/utils/constant'
 
 /**
  * @Author: 王林

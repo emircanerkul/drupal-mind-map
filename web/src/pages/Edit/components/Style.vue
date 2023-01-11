@@ -386,7 +386,7 @@ import {
   lineHeightList,
   shapeList
 } from '@/config'
-import { supportActiveStyle } from 'simple-mind-map/src/themes/default'
+import { supportActiveStyle } from '@emircanerkul/simple-mind-map/src/themes/default'
 import { mapState } from 'vuex'
 
 /**

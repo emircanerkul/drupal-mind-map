@@ -1,4 +1,4 @@
-import { simpleDeepClone } from 'simple-mind-map/src/utils/index'
+import { simpleDeepClone } from '@emircanerkul/simple-mind-map/src/utils/index'
 import Vue from 'vue'
 
 const SIMPLE_MIND_MAP_DATA = 'SIMPLE_MIND_MAP_DATA'

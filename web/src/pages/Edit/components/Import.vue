@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import MindMap from 'simple-mind-map'
+import MindMap from '@emircanerkul/simple-mind-map'
 import { fileToBuffer } from '@/utils'
 import { read, utils } from 'xlsx'
 
