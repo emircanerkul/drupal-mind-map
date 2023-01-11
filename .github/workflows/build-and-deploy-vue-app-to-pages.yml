@@ -19,6 +19,8 @@ jobs:
           node-version: 16
       - run: npm ci
         working-directory: ./web
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
   deploy:
     needs: build-vue-app
