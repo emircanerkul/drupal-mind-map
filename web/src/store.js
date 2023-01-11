@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import exampleData from 'simple-mind-map/example/exampleData'
 import { storeLocalConfig } from '@/api'
 
 Vue.use(Vuex)
@@ -70,7 +69,7 @@ const store = new Vuex.Store({
         let { data } = {
           data: {
             data: {
-              mindMapData: exampleData
+              mindMapData: {}
             }
           }
         }

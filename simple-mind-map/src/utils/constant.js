@@ -34,22 +34,22 @@ export const tagColorList = [
  */
 export const layoutList = [
   {
-    name: '逻辑结构图',
+    name: 'Logical Structure Diagram',
     value: 'logicalStructure',
     img: require('../assets/logicalStructure.jpg')
   },
   {
-    name: '思维导图',
+    name: 'Mind Mapping',
     value: 'mindMap',
     img: require('../assets/mindMap.jpg')
   },
   {
-    name: '组织结构图',
+    name: 'Organization Chart',
     value: 'organizationStructure',
     img: require('../assets/organizationStructure.jpg')
   },
   {
-    name: '目录组织图',
+    name: 'Directory Organization Chart',
     value: 'catalogOrganization',
     img: require('../assets/catalogOrganization.jpg')
   }
@@ -68,112 +68,117 @@ export const layoutValueList = [
  */
 export const themeList = [
   {
-    name: '默认',
+    name: 'Default',
     value: 'default',
     img: require('../assets/default.jpg')
   },
   {
-    name: '脑图经典',
+    name: 'Drupal',
+    value: 'drupal',
+    img: require('../assets/drupal.png')
+  },
+  {
+    name: 'Brain Map Classic',
     value: 'classic',
     img: require('../assets/classic.jpg')
   },
   {
-    name: '小黄人',
+    name: 'Minions',
     value: 'minions',
     img: require('../assets/minions.jpg')
   },
   {
-    name: '粉红葡萄',
+    name: 'Pink Grapes',
     value: 'pinkGrape',
     img: require('../assets/pinkGrape.jpg')
   },
   {
-    name: '薄荷',
+    name: 'Mint',
     value: 'mint',
     img: require('../assets/mint.jpg')
   },
   {
-    name: '金色vip',
+    name: 'Golden Vip',
     value: 'gold',
     img: require('../assets/gold.jpg')
   },
   {
-    name: '活力橙',
+    name: 'Vitality Orange',
     value: 'vitalityOrange',
     img: require('../assets/vitalityOrange.jpg')
   },
   {
-    name: '绿叶',
+    name: 'Green Leaves',
     value: 'greenLeaf',
     img: require('../assets/greenLeaf.jpg')
   },
   {
-    name: '暗色2',
+    name: 'Dark 2',
     value: 'dark2',
     img: require('../assets/dark2.jpg')
   },
   {
-    name: '天清绿',
+    name: 'Sky Green',
     value: 'skyGreen',
     img: require('../assets/skyGreen.jpg')
   },
   {
-    name: '脑图经典2',
+    name: 'Mind Map Classic 2',
     value: 'classic2',
     img: require('../assets/classic2.jpg')
   },
   {
-    name: '脑图经典3',
+    name: 'Mind Map Classic 3',
     value: 'classic3',
     img: require('../assets/classic3.jpg')
   },
   {
-    name: '脑图经典4',
+    name: 'Mind Map Classic 4',
     value: 'classic4',
     img: require('../assets/classic4.jpg')
   },
   {
-    name: '经典绿',
+    name: 'Classic Green',
     value: 'classicGreen',
     img: require('../assets/classicGreen.jpg')
   },
   {
-    name: '经典蓝',
+    name: 'Classic Blue',
     value: 'classicBlue',
     img: require('../assets/classicBlue.jpg')
   },
   {
-    name: '天空蓝',
+    name: 'Sky Blue',
     value: 'blueSky',
     img: require('../assets/blueSky.jpg')
   },
   {
-    name: '脑残粉',
+    name: 'Brain Powder',
     value: 'brainImpairedPink',
     img: require('../assets/brainImpairedPink.jpg')
   },
   {
-    name: '暗色',
+    name: 'Dark Color',
     value: 'dark',
     img: require('../assets/dark.jpg')
   },
   {
-    name: '泥土黄',
+    name: 'Earth Yellow',
     value: 'earthYellow',
     img: require('../assets/earthYellow.jpg')
   },
   {
-    name: '清新绿',
+    name: 'Fresh Green',
     value: 'freshGreen',
     img: require('../assets/freshGreen.jpg')
   },
   {
-    name: '清新红',
+    name: 'Fresh Red',
     value: 'freshRed',
     img: require('../assets/freshRed.jpg')
   },
   {
-    name: '浪漫紫',
+    name: 'Romantic Purple',
     value: 'romanticPurple',
     img: require('../assets/romanticPurple.jpg')
   }

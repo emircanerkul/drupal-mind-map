@@ -20,7 +20,7 @@ import KeyboardNavigation from './src/KeyboardNavigation'
 // 默认选项配置
 const defaultOpt = {
   // 是否只读
-  readonly: false,
+  readonly: true,
   // 布局
   layout: 'logicalStructure',
   // 主题

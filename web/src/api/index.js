@@ -1,4 +1,3 @@
-import exampleData from 'simple-mind-map/example/exampleData'
 import { simpleDeepClone } from 'simple-mind-map/src/utils/index'
 import Vue from 'vue'
 
@@ -24,21 +23,94 @@ const copyMindMapTreeData = (tree, root) => {
 }
 
 /**
- * @Author: 王林
- * @Date: 2021-08-01 10:10:49
- * @Desc: 获取缓存的思维导图数据
+ * Loads and converts all markdown files into a mindmap.
  */
 export const getData = () => {
-  let store = localStorage.getItem(SIMPLE_MIND_MAP_DATA)
-  if (store === null) {
-    return simpleDeepClone(exampleData)
-  } else {
-    try {
-      return JSON.parse(store)
-    } catch (error) {
-      return simpleDeepClone(exampleData)
+  let tree = {
+    "theme": {
+      "template": "drupal",
+      "config": {
+      }
+    },
+    "layout": "logicalStructure",
+    "root": {
+      "id": "drupal",
+      "data": {
+        "title": "Drupal",
+        "text": "",
+        // "image": "/image.jpeg",
+        // "imageTitle": "图片名称",
+        // "imageSize": {
+        //     "width": 1000,
+        //     "height": 563
+        // },
+        // "icon": ['priority_1'],
+        // "tag": ["标签1", "标签2"],
+        // "hyperlink": "http://lxqnsys.com/",
+        // "hyperlinkTitle": "理想青年实验室",
+        // "note": "理想青年实验室\n一个有意思的角落",
+      },
+      "children": []
+    },
+  };
+
+  const findNodeById = (tree, id) => {
+    let result = null
+
+    if (tree.id === id) return tree;
+
+    if (Array.isArray(tree.children) && tree.children.length > 0) {
+      tree.children.some((node) => {
+        result = findNodeById(node, id);
+        return result;
+      });
     }
+    return result;
   }
+
+  const docs = require.context('../../docs', true, /readme\.md$/)
+  require.context('../../docs', true, /\.md$/).keys().map(doc => {
+
+    let hierarchy = doc.slice(2, doc.length - 10).split('/');
+    let { html, attributes } = docs(doc);
+    hierarchy.forEach((e, i) => {
+      let result = findNodeById(tree.root, e);
+
+      if (e == '') {
+        tree.root.data.text = html;
+      } else if (result == null) {
+        if (i == 0) {
+          tree.root.children.push({
+            "id": e,
+            "data": {
+              "title": e,
+              "text": html,
+              ...attributes
+            },
+            "children": []
+          })
+        } else {
+          findNodeById(tree.root, hierarchy[i - 1]).children.push({
+            "id": e,
+            "data": {
+              "title": e,
+              "text": html,
+              ...attributes
+            },
+            "children": []
+          })
+        }
+      } else {
+        result.data = {
+          "title": e,
+          "text": html,
+          ...attributes
+        };
+      }
+    })
+  });
+
+  return simpleDeepClone(tree)
 }
 
 /**
@@ -99,8 +171,8 @@ export const getLang = () => {
   if (lang) {
     return lang
   }
-  storeLang('zh')
-  return 'zh'
+  storeLang('en')
+  return 'en'
 }
 
 /**

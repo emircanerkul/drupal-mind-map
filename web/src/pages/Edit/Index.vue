@@ -1,14 +1,12 @@
 <template>
   <div class="container">
     <template v-if="show">
-      <Toolbar v-if="!isZenMode"></Toolbar>
       <Edit></Edit>
     </template>
   </div>
 </template>
 
 <script>
-import Toolbar from './components/Toolbar'
 import Edit from './components/Edit'
 import { mapState, mapActions, mapMutations } from 'vuex'
 import { getLocalConfig } from '@/api'
@@ -16,7 +14,6 @@ import { getLocalConfig } from '@/api'
 export default {
   name: 'Index',
   components: {
-    Toolbar,
     Edit
   },
   data() {
@@ -33,7 +30,7 @@ export default {
     this.initLocalConfig()
     const loading = this.$loading({
       lock: true,
-      text: '正在加载，请稍后...'
+      text: 'Loading, please wait...'
     })
     await this.getUserMindMapData()
     this.show = true

@@ -17,6 +17,16 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
+
+h1 {
+  font-size: 16pt;
+  margin-bottom: 5px;
+}
+
+ul {
+  margin-left: 15px;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

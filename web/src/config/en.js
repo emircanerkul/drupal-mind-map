@@ -169,96 +169,6 @@ export const backgroundPositionList = [
 // 快捷键列表
 export const shortcutKeyList = [
   {
-    type: 'Node operation',
-    list: [
-      {
-        icon: 'icontianjiazijiedian',
-        name: 'Inert child node',
-        value: 'Tab'
-      },
-      {
-        icon: 'iconjiedian',
-        name: 'Insert sibling node',
-        value: 'Enter'
-      },
-      {
-        icon: 'iconshangyi',
-        name: 'Move up node',
-        value: 'Ctrl + ↑'
-      },
-      {
-        icon: 'iconxiayi',
-        name: 'Move down node',
-        value: 'Ctrl + ↓'
-      },
-      {
-        icon: 'icongaikuozonglan',
-        name: 'Insert summary',
-        value: 'Ctrl + S'
-      },
-      {
-        icon: 'iconzhankai',
-        name: 'Expand/UnExpand node',
-        value: '/'
-      },
-      {
-        icon: 'iconshanchu',
-        name: 'Delete node',
-        value: 'Delete | Backspace'
-      },
-      {
-        icon: 'iconfuzhi',
-        name: 'Copy node',
-        value: 'Ctrl + C'
-      },
-      {
-        icon: 'iconjianqie',
-        name: 'Cut node',
-        value: 'Ctrl + X'
-      },
-      {
-        icon: 'iconniantie',
-        name: 'Paste node',
-        value: 'Ctrl + V'
-      },
-      {
-        icon: 'iconbianji',
-        name: 'Edit node',
-        value: 'F2'
-      },
-      {
-        icon: 'iconhuanhang',
-        name: 'Text Wrap',
-        value: 'Shift + Enter'
-      },
-      {
-        icon: 'iconhoutui-shi',
-        name: 'Undo',
-        value: 'Ctrl + Z'
-      },
-      {
-        icon: 'iconqianjin1',
-        name: 'Redo',
-        value: 'Ctrl + Y'
-      },
-      {
-        icon: 'iconquanxuan',
-        name: 'Select All',
-        value: 'Ctrl + A'
-      },
-      {
-        icon: 'iconquanxuan',
-        name: 'Multiple choice',
-        value: 'Right click / Ctrl + Left click'
-      },
-      {
-        icon: 'iconzhengli',
-        name: 'Arrange layout',
-        value: 'Ctrl + L'
-      }
-    ]
-  },
-  {
     type: 'Canvas operation',
     list: [
       {
@@ -323,14 +233,9 @@ export const shapeList = [
 // 侧边栏列表
 export const sidebarTriggerList = [
   {
-    name: 'Node style',
-    value: 'nodeStyle',
-    icon: 'iconzhuti'
-  },
-  {
-    name: 'Base style',
-    value: 'baseStyle',
-    icon: 'iconyangshi'
+    name: 'Outline',
+    value: 'outline',
+    icon: 'iconfuhao-dagangshu'
   },
   {
     name: 'Theme',
@@ -343,12 +248,7 @@ export const sidebarTriggerList = [
     icon: 'iconjiegou'
   },
   {
-    name: 'Outline',
-    value: 'outline',
-    icon: 'iconfuhao-dagangshu'
-  },
-  {
-    name: 'ShortcutKey',
+    name: 'Shortcuts',
     value: 'shortcutKey',
     icon: 'iconjianpan'
   }

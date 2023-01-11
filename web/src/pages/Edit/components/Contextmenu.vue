@@ -85,10 +85,6 @@
           </div>
         </div>
       </div>
-      <div class="item" @click="exec('RESET_LAYOUT')">
-        {{ $t('contextmenu.arrangeLayout') }}
-        <span class="desc">Ctrl + L</span>
-      </div>
       <div class="item" @click="exec('TOGGLE_ZEN_MODE')">
         {{ $t('contextmenu.zenMode') }}
         {{ isZenMode ? '√' : '' }}

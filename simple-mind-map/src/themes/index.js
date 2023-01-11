@@ -20,9 +20,11 @@ import vitalityOrange from './vitalityOrange'
 import greenLeaf from './greenLeaf'
 import dark2 from './dark2'
 import skyGreen from './skyGreen'
+import drupal from './drupal'
 
 export default {
   default: defaultTheme,
+  drupal: drupal,
   freshGreen,
   blueSky,
   brainImpairedPink,

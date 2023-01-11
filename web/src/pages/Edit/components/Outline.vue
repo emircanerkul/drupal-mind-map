@@ -11,7 +11,7 @@
         <span
           class="nodeEdit"
           :key="getKey()"
-          contenteditable="true"
+          contenteditable="false"
           @keydown.stop
           @keyup.stop
           @blur="onBlur($event, node)"
@@ -46,7 +46,7 @@ export default {
       data: [],
       defaultProps: {
         label(data) {
-          return data.data.text.replaceAll(/\n/g, '</br>')
+          return data.data.title.replaceAll(/\n/g, '</br>')
         }
       }
     }

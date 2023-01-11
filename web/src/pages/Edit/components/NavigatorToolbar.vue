@@ -20,15 +20,7 @@
         $t('navigatorToolbar.openMiniMap')
       }}</el-checkbox>
     </div>
-    <div class="item">
-      <el-switch
-        v-model="isReadonly"
-        :active-text="$t('navigatorToolbar.readonly')"
-        :inactive-text="$t('navigatorToolbar.edit')"
-        @change="readonlyChange"
-      >
-      </el-switch>
-    </div>
+   
     <div class="item">
       <Scale :mindMap="mindMap"></Scale>
     </div>
@@ -65,8 +57,7 @@ export default {
     return {
       langList,
       lang: getLang(),
-      isReadonly: false,
-      openMiniMap: false
+      openMiniMap: true
     }
   },
   mounted() {

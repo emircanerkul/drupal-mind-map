@@ -160,6 +160,8 @@ class Event extends EventEmitter {
    * @Desc: 鼠标滚动
    */
   onMousewheel(e) {
+    let foreignObject = e.target.closest('foreignObject');
+    if (foreignObject != null && foreignObject.scrollHeight > foreignObject.clientHeight) return
     e.stopPropagation()
     e.preventDefault()
     let dir

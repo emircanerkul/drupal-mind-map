@@ -5,8 +5,6 @@
     <Navigator :mindMap="mindMap"></Navigator>
     <NavigatorToolbar :mindMap="mindMap" v-if="!isZenMode"></NavigatorToolbar>
     <Outline :mindMap="mindMap"></Outline>
-    <Style v-if="!isZenMode"></Style>
-    <BaseStyle :data="mindMapData" :mindMap="mindMap"></BaseStyle>
     <Theme :mindMap="mindMap"></Theme>
     <Structure :mindMap="mindMap"></Structure>
     <ShortcutKey></ShortcutKey>
@@ -23,8 +21,6 @@
 <script>
 import MindMap from 'simple-mind-map'
 import Outline from './Outline'
-import Style from './Style'
-import BaseStyle from './BaseStyle'
 import Theme from './Theme'
 import Structure from './Structure'
 import Count from './Count'
@@ -47,8 +43,6 @@ export default {
   name: 'Edit',
   components: {
     Outline,
-    Style,
-    BaseStyle,
     Theme,
     Structure,
     Count,

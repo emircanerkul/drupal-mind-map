@@ -117,11 +117,11 @@ export default {
 <style lang="less" scoped>
 .navigatorBox {
   position: absolute;
-  width: 350px;
-  height: 220px;
+  width: 150px;
+  height: 150px;
   background-color: #fff;
   bottom: 80px;
-  right: 20px;
+  left: 20px;
   box-shadow: 0 0 16px #989898;
   border-radius: 4px;
   border: 1px solid #eee;
@@ -136,7 +136,7 @@ export default {
 
   .windowBox {
     position: absolute;
-    border: 2px solid rgb(238, 69, 69);
+    border: 2px solid rgb(00, 119, 192);
     transition: all 0.3s;
   }
 }

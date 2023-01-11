@@ -37,7 +37,7 @@ export default {
     pasteNode: 'Paste node',
     backCenter: 'Back center',
     expandAll: 'Expand all',
-    unExpandAll: 'Un expand all',
+    unExpandAll: 'Collapse all',
     expandTo: 'Expand to',
     arrangeLayout: 'Arrange layout',
     level1: 'Level1',
@@ -110,7 +110,7 @@ export default {
     title: 'Shortcut key'
   },
   strusture: {
-    title: 'Strusture'
+    title: 'Structure'
   },
   style: {
     title: 'Node style',
@@ -156,7 +156,7 @@ export default {
     displayOutline: 'Display outline',
     baseStyle: 'Base style',
     theme: 'Theme',
-    strusture: 'Strusture',
+    strusture: 'Structure',
     newFile: 'New file',
     openFile: 'Open file',
     saveAs: 'Save as',
