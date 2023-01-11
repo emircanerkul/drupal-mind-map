@@ -40,6 +40,7 @@ jobs:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
   build-vue-app:
+    needs: publish-gpr
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
