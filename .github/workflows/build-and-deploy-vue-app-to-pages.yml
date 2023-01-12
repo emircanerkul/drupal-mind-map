@@ -28,6 +28,8 @@ jobs:
         working-directory: ./web
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - run: npm run build
+        working-directory: ./web
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
