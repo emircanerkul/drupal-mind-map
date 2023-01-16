@@ -130,11 +130,10 @@ export const getData = () => {
       });
     }
   }
-
   const removeWeights = (tree) => {
-    if (Array.isArray(tree.children) && tree.children.length > 0) {
-      tree.data.title = tree.data.title.slice(3);
+    tree.data.title = tree.data.title.slice(3);
 
+    if (Array.isArray(tree.children) && tree.children.length > 0) {
       tree.children.forEach((node) => {
         removeWeights(node);
       });
