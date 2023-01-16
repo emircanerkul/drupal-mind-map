@@ -29,7 +29,7 @@ module.exports = {
             })
     },
     publicPath: isDev ? '' : './',
-    outputDir: '../dist',
+    outputDir: '../docs',
     lintOnSave: false,
     productionSourceMap: false,
     configureWebpack: {
