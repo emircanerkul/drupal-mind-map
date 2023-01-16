@@ -1,4 +1,4 @@
-# Drupal Mind-map Documentation Vue Based App
+# Drupal Mind-map [styled] Documentation
 
 Mind-map styled Enriched Drupal Documentation. All documantation forked with [drupal-to-md](https://github.com/emircanerkul/drupal-to-md) from [Drupal Docs](https://www.drupal.org/docs) on 13 January 2023.
 
