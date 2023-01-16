@@ -4,6 +4,8 @@ Mind-map styled Enriched Drupal Documentation. All documantation forked with [dr
 
 Click [here](https://www.drupal.org/project/mindmap) to visit Drupal Module page.
 
+![Preview](preview.png)
+
 ## Development
 
 * `git clone https://github.com/emircanerkul/drupal-mind-map.git`
