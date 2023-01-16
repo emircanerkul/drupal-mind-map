@@ -1,0 +1,1 @@
+To provide your feedback on this first generation of the Automatic Updates module, please create an issue in the [Automatic Updates issue queue](https://www.drupal.org/project/issues/automatic%5Fupdates?version=all%5F8.x-2.%2A "Issues for Automatic Updates | Drupal.org").

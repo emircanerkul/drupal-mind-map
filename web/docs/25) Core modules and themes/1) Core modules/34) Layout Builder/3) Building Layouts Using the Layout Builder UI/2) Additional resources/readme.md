@@ -1,0 +1,1 @@
+* Step-by-step tutorial [Create a Flexible Layout for a Content Type](https://drupalize.me/tutorial/create-flexible-layout-content-type?p=3398)

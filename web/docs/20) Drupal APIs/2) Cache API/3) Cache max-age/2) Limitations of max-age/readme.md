@@ -1,0 +1,8 @@
+Unfortunately, `max-age`does not work for anonymous users and the Drupal core Page Cache module. For example, see these issues:
+
+* [#2352009: \[pp-3\] Bubbling of elements' max-age to the page's headers and the page cache](https://www.drupal.org/project/drupal/issues/2352009 "Status: Postponed")
+* [#2449749: Add #cache\['downstream-ttl'\] to force expiration after a certain time and fix #cache\['max-age'\] logic by adding #cache\['age'\]](https://www.drupal.org/project/drupal/issues/2449749 "Status: Active")
+* [#2835068: PageCache caching uncacheable responses (violating HTTP/1.0 spec) + D8 intentionally disabling HTTP/1.0 proxies = WTF](https://www.drupal.org/project/drupal/issues/2835068 "Status: Active")
+* [#2951814: Improve X-Drupal-Cache and X-Drupal-Dynamic-Cache headers, even for responses that are not cacheable](https://www.drupal.org/project/drupal/issues/2951814 "Status: Needs review")
+
+Until these (and perhaps other) issues are resolved, beware that setting `max-age` on a render array included in a page is insufficient to ensure that anonymous users will see a new version after the `max-age` as elapsed. In the meanwhile, the [Cache Control Override](/project/cache%5Fcontrol%5Foverride) contributed module tries to mitigate the problems. You might also have more luck setting a custom [cache tag](/docs/8/api/cache-api/cache-tags) on pages with time-dependent content and invalidating those cache tags manually via `hook_cron()`. Good luck!

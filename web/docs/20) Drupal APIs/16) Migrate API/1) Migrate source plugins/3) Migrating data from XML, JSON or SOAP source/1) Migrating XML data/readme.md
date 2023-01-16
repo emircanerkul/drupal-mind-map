@@ -1,0 +1,2 @@
+* [Migrating XML in Drupal 8](https://www.palantir.net/blog/migrating-xml-drupal-8) by Kelsey Bentham (2016)
+* [Stop Waiting for Feeds Module: How to Import RSS in Drupal](https://ohthehugemanatee.org/blog/2017/06/07/stop-waiting-for-feeds-module-how-to-import-remote-feeds-in-drupal-8/) by Campbell Vertesi (2017)

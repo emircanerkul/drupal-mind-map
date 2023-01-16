@@ -1,0 +1,3 @@
+Authentication credentials (such as API keys) should not be stored unencrypted in the Drupal database or file system. They should not be committed to a code repository or stored in files under version control.
+
+Credentials should be encrypted before they are stored and decrypted only when needed. Ideally, the chain of trust extends from the storage location to the usage site, and secrets can not be viewed in any other way.

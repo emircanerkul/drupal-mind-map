@@ -1,0 +1,3 @@
+To import BigCommerce products from the command line you can use the drush command `drush migrate:import --group bigcommerce`. This command will synchronise products from BigCommerce to your Drupal site.
+
+If you want automatic updates from BigCommerce this command can be trigger on cron. Note this refers to your operating systems cron implementation and note Drupals. For example, on Linux this can be managed with crontab.

@@ -1,0 +1,1 @@
+The web widget, provided by the Botman Framework, displays a floating chat icon that when clicked, displays a chat modal where users can interact with the chatbot. You can find more details here: <https://botman.io/2.0/web-widget>

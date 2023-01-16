@@ -1,0 +1,1 @@
+Alternative text is now required by default. This can be overridden in both CKEditor & Image Fields. We have assumed that content creators will want to make their content accessible.

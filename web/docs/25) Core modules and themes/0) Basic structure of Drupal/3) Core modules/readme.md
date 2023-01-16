@@ -1,0 +1,1 @@
+See separate page for a list of documentation for the approximately 76 [core modules](https://www.drupal.org/docs/8/core/modules) (as of Drupal 9.3x). In the Drupal source code tree, these core modules can be found under the /drupal/core/modules folder. 

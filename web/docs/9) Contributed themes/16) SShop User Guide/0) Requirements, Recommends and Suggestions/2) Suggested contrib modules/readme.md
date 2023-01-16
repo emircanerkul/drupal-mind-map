@@ -1,0 +1,2 @@
+* [Taxonomy Views Integrator](https://www.drupal.org/project/tvi) (1.\*) - display Views for taxonomy term (/taxonomy/term/%) separately for Product Category and for Blog Category.
+* [Allowed Formats ](https://www.drupal.org/project/allowed%5Fformats)(1.\*) - Control "About text formats" link. Usable for the comment form.

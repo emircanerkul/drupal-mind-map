@@ -1,0 +1,1 @@
+It would be amazing if you could spread the details about Drupal 9 at your local user group, conference, meetup and inside your company. [Gábor Hojtsy created an editable open source "State of Drupal 9" slideshow](http://hojtsy.hu/blog/2020-mar-16/whole-new-version-open-source-state-drupal-9-slideshow-present-it-yourself). Please take it and present it at your local event.

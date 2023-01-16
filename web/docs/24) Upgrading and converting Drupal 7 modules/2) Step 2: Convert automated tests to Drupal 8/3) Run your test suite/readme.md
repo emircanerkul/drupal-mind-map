@@ -1,0 +1,1 @@
+You can use the new search field to find your module's tests on the page.

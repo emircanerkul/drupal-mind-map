@@ -1,0 +1,3 @@
+Dezső Biczó built an initial version of automated deprecation fixes for some common cases with Rector. This was later [taken over by Palantir.net](https://github.com/palantirnet/drupal-rector). Plans include building coverage for most deprecated APIs. The [Upgrade Rector contributed project](https://www.drupal.org/project/upgrade%5Frector) was built to provide a user interface on top of drupal-rector. It is also integrated with Upgrade Status.
+
+![Screenshot of Upgrade Rector's standalone UI](https://www.drupal.org/files/UpgradeRectorScreen.png)

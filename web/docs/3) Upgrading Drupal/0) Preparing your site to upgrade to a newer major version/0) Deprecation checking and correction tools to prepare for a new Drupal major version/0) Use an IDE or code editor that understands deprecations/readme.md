@@ -1,0 +1,1 @@
+If you are developing Drupal code, it is best to use an IDE or code editor that understands deprecations (`@deprecated` annotations particularly). For example, IDEs like PHPStorm will cross out calls to deprecated methods and inform you of what should be used instead. Deprecated code use will be made visible as part of the development process.

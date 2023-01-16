@@ -1,0 +1,3 @@
+The [apigee/docker-apigee-drupal-kickstart](https://github.com/apigee/docker-apigee-drupal-kickstart) project on GitHub can help you get the Developer Portal Kickstart up and running quickly in a Docker container. Prerequisites and installation instructions for the Docker image are available in the project's [README](https://github.com/apigee/docker-apigee-drupal-kickstart#readme).
+
+**Note**: The docker image is for local development of your Kickstart portal only. The Docker image implementation of the Developer Portal Kickstart is not intended for use in a production environment.

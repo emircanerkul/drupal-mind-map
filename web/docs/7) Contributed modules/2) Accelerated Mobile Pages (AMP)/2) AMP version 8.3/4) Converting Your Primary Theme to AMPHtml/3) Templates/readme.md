@@ -1,0 +1,3 @@
+There are several core twig templates you'll want to override. The most important is image.html.twig since it will convert all images to use <amp-image></amp-image> instead. Copy templates from AMPTheme or Bartik AMP into your custom theme. If your theme includes any other templates that have invalid markup, create a copy and fix the markup.
+
+If your theme has twig files that attach javascript, create a copy of the template that leaves the javascript out.

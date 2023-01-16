@@ -1,0 +1,1 @@
+When working with theme hook suggestion, there is a possibility that Drupal uses its cache rather than the new templates as suggested. Clear the cache if you experience this problem. To clear the cache, choose one of the methods described in [Clearing Drupal's cache](http://drupal.org/node/42055).

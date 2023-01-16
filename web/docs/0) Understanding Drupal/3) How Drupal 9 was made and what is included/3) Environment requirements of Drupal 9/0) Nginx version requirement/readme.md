@@ -1,0 +1,1 @@
+If you are running Drupal 9 on Nginx, at least version 0.7.x is required.

@@ -1,0 +1,1 @@
+Use the JSHint JavaScript to lint the files on your site.

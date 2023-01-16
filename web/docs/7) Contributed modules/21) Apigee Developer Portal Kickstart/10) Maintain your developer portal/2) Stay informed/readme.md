@@ -1,0 +1,1 @@
+Stay informed about security and software updates by following Drupal security announcements and configuring your site to alert administrators when security updates are available. Learn more by reading the [Drupal documentation about keeping track of updates](https://www.drupal.org/docs/user%5Fguide/en/security-announce.html). 

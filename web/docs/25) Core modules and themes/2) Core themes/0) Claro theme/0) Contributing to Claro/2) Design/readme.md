@@ -1,0 +1,3 @@
+The design team is discussing at #admin-ui-design channel on [Drupal Slack](https://www.drupal.org/slack). The designs are being worked on [Figma](https://www.figma.com/file/OqWgzAluHtsOd5uwm1lubFeH/Drupal-Design-system?node-id=553%3A0). The Figma project is visible to everyone, but if you want to start contributing to the designs, please reach out to us on our Slack channel.
+
+To learn more about designing Claro, see the specific documentation about [Claro designs](https://www.drupal.org/docs/8/core/themes/claro-theme/design).

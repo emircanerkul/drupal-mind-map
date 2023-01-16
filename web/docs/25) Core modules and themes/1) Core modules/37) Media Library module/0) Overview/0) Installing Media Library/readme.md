@@ -1,0 +1,3 @@
+Getting started with Media Library couldn't be any easier. Simply visit the Extend page of the administrative interface, and install the "Media Library" module from the "Core" group. That's all!
+
+From here, there are two ways to use the Media Library: [via an entity reference field](https://www.drupal.org/docs/8/core/modules/media-library-module/the-media-library-field-widget), or [in a WYSIWYG text editor](https://www.drupal.org/docs/8/core/modules/media-library-module/embedding-media-with-ckeditor). 

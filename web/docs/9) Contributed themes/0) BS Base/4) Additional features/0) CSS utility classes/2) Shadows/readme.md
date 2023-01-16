@@ -1,0 +1,1 @@
+Use \`.shadow-dark\` to consistently apply shadow to buttons and button-like elements.

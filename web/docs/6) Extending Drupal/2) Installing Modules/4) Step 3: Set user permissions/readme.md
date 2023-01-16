@@ -1,0 +1,3 @@
+So many people forget to set permissions (/admin/people/permissions) for the newly added module. Without giving the right permissions, your users will not be able to use the module. For security, permissions are not initially enabled, after adding a new module, for anyone except the Administrator.
+
+See [Permissions and configuration](https://www.drupal.org/docs/8/modules/workbench-menu-access/permissions-and-configuration) for the Workbench Menu Access module for an example, and [The permission layers explained](https://www.drupal.org/docs/8/modules/group/the-permission-layers-explained) from the Group module documentation for more information.

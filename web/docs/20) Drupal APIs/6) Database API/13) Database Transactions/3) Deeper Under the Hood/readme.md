@@ -1,0 +1,9 @@
+Transactions can get quite complicated when you try and start two transactions at the same time. The behavior in that case also varies between databases.
+
+A similar problem exists with nesting locks in C/C++. If the code has already acquired lock A and attempts to acquire lock A, the code will deadlock. If you write code that checks if it already has the lock and doesn't attempt to acquire it again, you avoid the deadlock but could release the lock prematurely.
+
+In MySQL, we have the same problem. If your code is already in a transaction, starting a new transaction has the surprising and unfortunate consequence of committing the current transaction and starting a new one. In PostgreSQL, starting a transaction while a transaction is open has no effect except that a warning is emitted; the already-open transaction continues.
+
+Java solves the nesting problem with its locks by implementing support for a nesting structure similar to the example given above. Java allows you to mark functions as "synchronized," which causes the function to wait for lock acquisition before running and release the lock when no longer needed. If one synchronized function calls another in the same class, Java track the lock nesting. The outer function acquires the lock, the inner function performs no locking operations, and the outer function releases the lock when it returns.
+
+While we cannot declare functions "transactional" in PHP, we can emulate Java's nesting logic by using objects with constructors and destructors. A function simply calls "$transaction = $connection->startTransaction()" as its first (or nearly first) operation to make itself transactional. If one transactional function calls another, our transaction abstraction layer nests them by performing no transactional operations (as far as the database sees) within the inner nesting layers.

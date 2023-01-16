@@ -233,11 +233,6 @@ export const shapeList = [
 // 侧边栏列表
 export const sidebarTriggerList = [
   {
-    name: 'Outline',
-    value: 'outline',
-    icon: 'iconfuhao-dagangshu'
-  },
-  {
     name: 'Theme',
     value: 'theme',
     icon: 'iconjingzi'

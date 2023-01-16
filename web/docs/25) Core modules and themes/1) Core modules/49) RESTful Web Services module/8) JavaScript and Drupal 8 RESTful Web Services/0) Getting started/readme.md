@@ -1,0 +1,1 @@
+See [Getting started: REST configuration & REST request fundamentals](/documentation/modules/rest/start). Please read that first!

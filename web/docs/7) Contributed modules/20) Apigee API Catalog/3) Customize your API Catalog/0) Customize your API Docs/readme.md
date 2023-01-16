@@ -1,0 +1,1 @@
+The API Doc is a Drupal entity. You can modify it at **Structure** \> **API Doc settings** in the Drupal admin menu.

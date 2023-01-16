@@ -1,0 +1,2 @@
+* [Change record: FormInterface replaces form constructor, validation, and submission callbacks](https://drupal.org/node/1932058)
+* [Community Documentation: Form API in Drupal 8](https://www.drupal.org/node/2117411)

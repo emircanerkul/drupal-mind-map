@@ -1,0 +1,2 @@
+* [Presentation from DrupalCon 2019](https://events.drupal.org/sites/default/files/slides/drupalcon.2019.autowiring.pdf) with the title "Accelerate with Service Autowiring!".
+* The [Autoservices Drupal module](/project/autoservices) can also be a good example for your own solution with a service provider PHP class: <https://gitlab.com/upstreamable/drupal-autoservices>. The module's service provider also contains functionality for event listeners and other PHP class types.

@@ -1,0 +1,2 @@
+* [Instructions for deGov 5.x+](https://www.drupal.org/docs/8/distributions/degov/install-degov-5x)
+* [Instructions for deGov 1.x (legacy)](https://www.drupal.org/docs/8/distributions/degov/install-1x)

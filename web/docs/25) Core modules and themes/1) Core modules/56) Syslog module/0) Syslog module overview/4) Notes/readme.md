@@ -1,0 +1,3 @@
+On Windows Server 2003R2, syslog doesn't write successfully to the Event Log. Instead, an Application Warning appears (Source: PHP-5.2.0) which starts with: "The description for Event ID ( 3 ) in Source ( PHP-5.2.9 ) cannot be found. The local computer may not have the necessary registry information or message DLL files to display messages from a remote computer". According to <http://www.php.net/manual/en/function.syslog.php#41832> , the default IUSR\_ needs to be added to the Users group
+
+php.ini needs to explicitly state that error logs are written to syslog (ie. error\_log = syslog), otherwise the syslog module will not work.

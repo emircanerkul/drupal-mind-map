@@ -1,0 +1,2 @@
+* [Drupal 8 now has page caching enabled by default](https://wimleers.com/blog/drupal-8-page-caching-enabled-by-default "Drupal 8 now has page caching enabled by default | Wim Leers")
+* [Cache tags developer documentation](https://www.drupal.org/docs/drupal-apis/cache-api/cache-tags "Cache tags | Drupal 8 guide on Drupal.org")

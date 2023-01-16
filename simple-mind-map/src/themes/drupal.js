@@ -28,8 +28,7 @@ export default merge(defaultTheme, {
     }
   },
   second: {
-    fillColor: colors.light,
-    color: '#fff',
+    fillColor: "#e8f6ffaa",
     borderColor: colors.default,
     borderWidth: 3,
     fontSize: 14,
@@ -45,7 +44,9 @@ export default merge(defaultTheme, {
     color: '#333',
     active: {
       borderColor: 'rgb(96, 73, 57)'
-    }
+    },
+    borderColor: '#e8f6ff',
+    borderWidth: 3,
   },
   generalization: {
     fillColor: '#fff',

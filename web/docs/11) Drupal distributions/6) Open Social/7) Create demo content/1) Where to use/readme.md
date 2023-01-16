@@ -1,0 +1,1 @@
+This demo content will be available on the **nightly build** and on all **development** machines that install the site with the provided install script in this repository.

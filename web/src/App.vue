@@ -12,10 +12,24 @@ export default {
 </script>
 
 <style>
+
+:root {
+  --blockquote-border-color: #87d1ffaa !important;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
+}
+
+foreignObject * {
+  user-select: text;
+}
+
+foreignObject *:not(a) {
+  color: inherit;
 }
 
 h1 {

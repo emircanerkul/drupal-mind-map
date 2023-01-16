@@ -1,0 +1,1 @@
+There are plans to create a new default front-end theme for Drupal 9\. Discussion and opportunities for contribution can be found in the [Drupal 9 core theme](https://www.drupal.org/project/ideas/issues/3064880) issue thread and the #d9-theme channel on [Drupal Slack](https://www.drupal.org/slack).

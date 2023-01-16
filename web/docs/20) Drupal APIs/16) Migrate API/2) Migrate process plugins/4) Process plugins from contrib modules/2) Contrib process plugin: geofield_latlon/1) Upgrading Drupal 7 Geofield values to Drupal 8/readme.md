@@ -1,0 +1,1 @@
+The upgrade path from Drupal 7 Geofield to Drupal 8 Geofield is now complete. See <https://www.drupal.org/project/geofield/issues/3003822>.

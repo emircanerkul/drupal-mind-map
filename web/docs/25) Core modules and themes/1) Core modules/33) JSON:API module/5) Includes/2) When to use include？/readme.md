@@ -1,0 +1,1 @@
+Speaking of response size... in this example, we saved ourselves time by getting all resources in a single request. However, under certain circumstances, including related resource objects will make the response size quite large and/or make the time-to-first-byte very slow. In that case, it might still be better to make multiple requests in parallel.

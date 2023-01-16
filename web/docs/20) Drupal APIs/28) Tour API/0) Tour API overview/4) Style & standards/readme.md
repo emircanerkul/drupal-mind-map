@@ -1,0 +1,1 @@
+Make sure you are aware of the [interface patterns](/node/2000088) and [style guidelines for tours](/node/2040099) and UI text in general.

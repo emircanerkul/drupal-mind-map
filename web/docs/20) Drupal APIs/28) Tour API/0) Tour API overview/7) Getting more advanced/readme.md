@@ -1,0 +1,3 @@
+If you find you need to do something more advanced than show a text tip, for example, you need some additional parameters or logic, you will need to create a tip plugin by implementing the TipPluginInterface. See the tour\_test module for an example - it contains an image plugin that renders an image instead of text, taking a 'url' configuration key instead of a body.
+
+This page was adapted from [this blog post](http://previousnext.com.au/blog/tour-module-part-2-creating-tour-your-module).

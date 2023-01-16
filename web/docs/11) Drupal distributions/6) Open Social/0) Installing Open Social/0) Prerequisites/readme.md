@@ -1,0 +1,2 @@
+We use composer for installing and updating Open Social.  
+This is where you can get [Composer](https://getcomposer.org/download/), also for downloading it through drupal.org, you still need it for a proper installation.

@@ -1,0 +1,5 @@
+In contrast to other discovery mechanisms, the annotation metadata lives in the same file and is an integral part of the class that implements the plugin. This makes it easier to find and easier to create a new custom plugin by simply copying an existing one.
+
+Annotations allow for complex structured data, and you can indicate that certain strings are to be translated. In many cases, plugins have an associated custom annotation class that can be used to both document and set default values for the metadata.
+
+In addition, there is a performance bonus as it makes Drupal use less memory when discovering plugins. The original implementation had a getInfo() method on each class, similar to Drupal 7 test classes. This meant each class had to be loaded into memory to get its information and the memory was not freed until the end of the request, thus greatly increasing the peak memory requirement for PHP. Instead, the implementation used by Drupal to parse the annotation simply tokenizes the text of the file without including it as a PHP file, so memory use is minimized.

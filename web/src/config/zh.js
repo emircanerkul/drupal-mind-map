@@ -305,11 +305,6 @@ export const langList = [
 // 侧边栏列表
 export const sidebarTriggerList = [
   {
-    name: '大纲',
-    value: 'outline',
-    icon: 'iconfuhao-dagangshu'
-  },
-  {
     name: '主题',
     value: 'theme',
     icon: 'iconjingzi'

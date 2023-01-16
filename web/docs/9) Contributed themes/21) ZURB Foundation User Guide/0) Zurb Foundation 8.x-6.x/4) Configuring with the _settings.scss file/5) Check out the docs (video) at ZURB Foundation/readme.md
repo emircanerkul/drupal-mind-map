@@ -1,0 +1,3 @@
+If you want more info on any of the things you see in the \_settings.scss file, then this is the perfect opportunity for these docs to direct you over to the ZURB Foundation documentation. As we have said throughout our docs the ZURB Foundation for Sites documentation is very good and applies directly to the Drupal theme project.
+
+Head over to the ZURB Foundation for Sites documentation and [start at Global styles](https://foundation.zurb.com/sites/docs/global.html). The video and documentation will assist you with adjusting the _\_settings.scss_ file in greater detail.

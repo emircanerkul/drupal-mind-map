@@ -1,0 +1,1 @@
+If you want to add text (for instance your phone number) or photos etc. to your form page, you can do that by adding a block (or several blocks) which will appear only on the contact form.

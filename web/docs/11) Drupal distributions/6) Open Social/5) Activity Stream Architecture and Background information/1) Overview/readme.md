@@ -1,0 +1,1 @@
+![overview](https://www.drupal.org/files/taras-blog-activity-factory.png)

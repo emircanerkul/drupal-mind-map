@@ -1,0 +1,1 @@
+Some of the paragraphs are grouping themselves when more than one is placed next to one another. Examples of such paragraphs are the Accordion item, Tab item and Timeline item. The system will create a wrapper div around these paragraphs.

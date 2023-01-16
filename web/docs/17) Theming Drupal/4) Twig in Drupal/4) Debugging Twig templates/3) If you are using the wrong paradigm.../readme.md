@@ -1,0 +1,3 @@
+One thing to consider if you are doing a lot of coding in twig is to ask yourself if you really need to be doing complex activities on this level. For example: consider if you are better off doing something like copying an existing field formatter plugin file into a custom module (remembering to use the same path structure) and simply changing the annotation (introduction comment, aka plugin name) and customizing the PHP/HTML to do what you want there. Plugins in Drupal 8 are just standalone files that live in specific folders and can be very easy to work with.
+
+More debugging options can be found in [the next section](https://www.drupal.org/node/1903374).

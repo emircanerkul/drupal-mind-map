@@ -1,0 +1,3 @@
+* [What is a module?](https://www.drupal.org/docs/user%5Fguide/en/understanding-modules.html " Modules | Drupal 8 User Guide guide on Drupal.org")
+* [Learn about finding and evaluating modules](https://www.drupal.org/docs/user%5Fguide/en/extend-module-find.html "11.1. Finding Modules | Drupal 8 User Guide guide on Drupal.org").
+* [More information about evaluating modules](https://www.drupal.org/docs/8/extending-drupal-8/finding-contributed-modules "Finding Contributed Modules | Drupal 8 guide on Drupal.org").

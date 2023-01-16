@@ -1,0 +1,5 @@
+Commerce products are created to store products from BigCommerce. As you created and configure products in BigCommerce the sync will create any necessary fields, product types, taxonomies and vocabularies in Drupal. BigCommerce is treated as the single source of truth and so an updates made there will overwrite any changes to products made on the Drupal side.
+
+Products should be created, updated and deleted in BigCommerce. It is the single source of truth. On your Drupal site you can add additional fields to your commerce products but if you change data that is coming from BigCommerce - for example a price or a product title - this will be updated when data from BigCommerce is synced again.
+
+The synchronisation uses the Migrate API. The module contains migrations to create the necessary configuration and commerce product entities. These migrations use the BigCommerce API to retrieve data from BigCommerce. 

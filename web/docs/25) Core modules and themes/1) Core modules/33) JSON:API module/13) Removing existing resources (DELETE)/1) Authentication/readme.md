@@ -1,0 +1,3 @@
+Typically some form of authentication is used for DELETE requests. The examples below all use Basic Authentication. Enable the HTTP Basic Authentication module, set the permission for the API user (and role) and add set the encoded username and password to the 'Authorization' request header.
+
+The example header on this page requires a Drupal user 'api' with password 'api'. This user must have permission to delete the requested content.

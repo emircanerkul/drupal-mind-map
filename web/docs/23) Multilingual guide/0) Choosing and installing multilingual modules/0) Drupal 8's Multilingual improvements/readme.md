@@ -1,0 +1,3 @@
+When you install Drupal 8, the first thing you need to choose is the base language for the installation. The installer will attempt to make the reasonable choice based on your browser language, and should display the page in your browser language. If you are making a multilingual site, choose one of the languages that you want to use as installation language, and preferably not English (a non-English choice will cause some modules you'll need to be installed).
+
+\[Note that unlike previous versions of Drupal, your site does not need to have English installed at all!\]

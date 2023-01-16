@@ -1,0 +1,5 @@
+* Before you begin, install and enable the following modules using Composer, if not already installed:  
+   * [Commerce Recurring Framework](https://www.drupal.org/project/commerce%5Frecurring)  
+   * [Drupal Commerce](https://drupalcommerce.org/)
+* Confirm that the Commerce Payment Example module is also enabled. The Commerce Recurring Framework requires an on-site payment gateway to work with recurring payment subscriptions. For the purposes of testing this module, these steps use the "Example (On-site)" payment gateway provided by the Commerce Payment Example module.
+* Confirm that the Apigee Monetization Add Credit module is enabled and that Add Credit products have been configured. For more information on configuring Add Credit, see Steps 2 and 3 of [Enable the Apigee Add Credit Module](https://www.drupal.org/docs/8/modules/apigee-monetization/enable-the-apigee-monetization-add-credit-module#step-2-set-up-a-store).

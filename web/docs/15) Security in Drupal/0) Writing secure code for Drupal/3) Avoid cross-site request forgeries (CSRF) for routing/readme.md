@@ -1,0 +1,1 @@
+CSRF protection is now integrated into the routing access system and should be used for any URLs that perform actions or operations that do not use a form callback. For more information read [this article](https://www.drupal.org/docs/8/api/routing-system/access-checking-on-routes/csrf-access-checking).

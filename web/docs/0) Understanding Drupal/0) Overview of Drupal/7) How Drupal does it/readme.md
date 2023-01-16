@@ -1,0 +1,9 @@
+Intrigued yet? Let's take a closer look at how Drupal works.
+
+People often think of a website as a collection of static pages, perhaps with some functions like a blog or a news engine thrown in to round it out. When they go to manage their site, they are thinking in terms of a tree-like hierarchy of pages that they will edit.
+
+Drupal, however, treats most content types as variations on the same concept: a node (more on this in a moment). Static pages, blog posts and news items (some possible node types) are all stored in the same way and the site's navigation structure is designed separately by editing menus, views (lists of content) and blocks (side content which often has links to different site sections).
+
+It’s a lot like the separation you find in standards-compliant page coding—HTML5 provides the meaningful structure of the information, while CSS arranges it for presentation. In Drupal, nodes hold the structured information pertaining to a blog post (such as title, content, author, date) or a news item (title, content, go-live date, take-down date), while the menu system, as well as taxonomy (tagging of content) and views, creates an information architecture. Finally, the theme system, along with display modules like Panels, controls how all this looks to site visitors.
+
+Since these layers are kept separate, you can provide a completely different navigation and presentation of your content to different users based on their specific needs and roles. Pages can be grouped differently, prioritized in a different order and various functions and content can be shown or hidden as needed.

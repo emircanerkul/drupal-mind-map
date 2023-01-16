@@ -1,0 +1,1 @@
+Blocks in Drupal 8 are actually made up of two separate API structures to create a user experience similar to what Drupal has maintained in past iterations. These two APIs are the **Block Plugin API**, which is a stand-alone reusable API, and the **Block Entity API** which is a Drupal 8-specific use case of block placement and visibility control.

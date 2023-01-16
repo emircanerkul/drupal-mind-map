@@ -1,0 +1,5 @@
+Cache tags provide a declarative way to track which cache items depend on some data managed by Drupal.
+
+This is essential for a content management system/framework like Drupal because the same content can be reused in many ways. In other words: it is impossible to know ahead of time _where_ some content is going to be used. In any of the places where the content is used, it may be cached. Which means the same content could be cached in dozens of places. Which then brings us to the famous quote "There are only two hard things in Computer Science: cache invalidation and naming things." — that is, _how are you going to invalidate all cache items where the content is being used?_
+
+_Note: Drupal 7 offered 3 ways of invalidating cache items: invalidate a specific CID, invalidate using a CID prefix, or invalidate everything in a cache bin. None of those 3 methods allow us to invalidate the cache items that contain an entity that was modified, because that was impossible to know!_

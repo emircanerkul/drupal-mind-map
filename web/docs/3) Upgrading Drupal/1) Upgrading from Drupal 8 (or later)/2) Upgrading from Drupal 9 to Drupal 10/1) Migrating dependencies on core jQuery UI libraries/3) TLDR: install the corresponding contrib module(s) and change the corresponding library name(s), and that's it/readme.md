@@ -1,0 +1,1 @@
+You don't need to add any assets or create libraries yourself. The contrib modules take care of everything other than renaming the libraries your code depends on.

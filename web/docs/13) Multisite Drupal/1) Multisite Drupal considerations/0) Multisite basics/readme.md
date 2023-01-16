@@ -1,0 +1,3 @@
+Although a Drupal site requires a web server program (Eg. Apache or IIS), a database program (Eg. MySQL or MSSql), and a PHP interpreter to run, everything that is unique to your site is contained in your database and codebase.
+
+A Drupal core update is essentially a replacement of your codebase. Your database is left unchanged, with the exception that after you replace your codebase, you need to run the 'update script' \[YOURSITE/update.php\] for each site.

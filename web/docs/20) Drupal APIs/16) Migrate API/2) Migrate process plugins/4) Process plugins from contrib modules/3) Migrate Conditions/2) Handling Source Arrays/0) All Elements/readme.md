@@ -1,0 +1,1 @@
+You can use the [all\_elements](https://www.drupal.org/docs/contributed-modules/migrate-conditions/migrate-conditions-condition-plugins/all-elements) condition to evaluate a condition on each individual element of the source array. This condition will be true if every individual array element meets the condition.

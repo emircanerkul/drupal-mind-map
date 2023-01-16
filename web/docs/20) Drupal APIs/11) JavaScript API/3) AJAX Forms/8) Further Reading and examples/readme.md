@@ -1,0 +1,7 @@
+* [Drupal Ajax API Guide](/docs/8/api/ajax-api)
+* [Overview for Drupal's Ajax API (on api.drupal.org)](https://api.drupal.org/api/drupal/core%21core.api.php/group/ajax/8.7.x)
+* [AJAX Dialogs Example from ajax\_add\_to\_cart module](https://cgit.drupalcode.org/ajax%5Fadd%5Fto%5Fcart/tree/src/Helper/AjaxCartHelper.php)
+* [Ajax commands for opening and closing Dialogs](https://www.drupal.org/node/1989646)
+* [Another Drupal 8 - Ajax Example](https://gist.github.com/AkshayKalose/37df41d94d16ee1eec35)
+* [Custom AJAX Command (CommandInterface) Example from ajax\_add\_to\_cart module](https://cgit.drupalcode.org/ajax%5Fadd%5Fto%5Fcart/tree/src/Ajax/ReloadCommand.php)
+* [Example for using CHECKBOXES instead of SELECT with an AJAX callback (Stack Overflow).](https://stackoverflow.com/questions/15806813/drupal-7-checkboxes-array-replace-with-ajax-callback)

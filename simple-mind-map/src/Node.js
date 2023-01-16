@@ -443,9 +443,9 @@ class Node {
     fO.node.style.overflowX = 'hidden'
     fO.node.style.paddingRight = '10px'
     fO.node.style.padding = '5px 10px'
-    fO.node.style.boxShadow = '0 14px 28px rgba(0,0,0,0.25)'
+    // fO.node.style.boxShadow = '0 14px 28px rgba(0,0,0,0.25)'
     fO.node.style.color = this.getStyle('color', this.isRoot, this.nodeData.data.isActive)
-    fO.node.style.borderRadius = `${this.getStyle('borderRadius', this.isRoot, this.nodeData.data.isActive)}px`
+    // fO.node.style.borderRadius = `${this.getStyle('borderRadius', this.isRoot, this.nodeData.data.isActive)}px`
     
     if (this.isRoot){
       let svg = document.createElement('div');

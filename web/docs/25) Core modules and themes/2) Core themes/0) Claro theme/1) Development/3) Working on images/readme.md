@@ -1,0 +1,3 @@
+.pcss.css files should never reference inlined SVGs. They should instead reference an actual SVG file with `url(../../etc.svg)`. These svg file references will be inlined to the CSS compiled from .pcss.css files.
+
+Whenever images are added or modified, make sure they're optimized by dropping them into <https://imageoptim.com/>. Optimizing images is important because it reduces the amount of data that end users need to download: it improves front-end performance, reduces data cost and reduces energy consumption.

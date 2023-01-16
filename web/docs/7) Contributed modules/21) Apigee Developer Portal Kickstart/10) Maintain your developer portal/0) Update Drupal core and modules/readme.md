@@ -1,0 +1,5 @@
+To ensure that your Apigee Kickstart developer portal functions optimally, you may need to update Drupal core or Drupal core modules from time to time.
+
+[Composer](https://getcomposer.org/) is the supported tool for managing Drupal and its dependencies in your Kickstart developer portal. To understand how Composer manages Drupal dependencies, see [Using Composer with Drupal](https://www.drupal.org/docs/develop/using-composer/using-composer-with-drupal).
+
+Step-by-step instructions to [Update core via Compose](https://www.drupal.org/docs/8/update/update-core-via-composer)r and [Update modules](https://www.drupal.org/docs/8/update/update-modules) are available on Drupal.org. If you need to update core manually or using Drush, you can find additional guidance at [Updating Drupal](https://www.drupal.org/docs/8/update).

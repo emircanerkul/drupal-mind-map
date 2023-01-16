@@ -1,0 +1,6 @@
+This book page is not for developers that are new to application testing. Therefore, it does not describe unit testing concepts and techniques. The following list describes the level of experience or knowledge required to understand this book:
+
+* Familiarity with unit tests, programming on PHP 5.x with the corresponding development tools for that platform, and the process of writing tests in general.
+* A general understanding of the structure and concept of xUnit testing frameworks; the object model; dependency management (composition, inheritance patterns) including database mocking.
+
+Agile testing combines engineering with testing activities into one activity and can be expressed by following Test Driven Development where a developer would write tests first. In particular, this book page focuses on unit testing where units represent objects or single architectural layers in contrast to functional testing (customer tests) where a unit represents the complete application (many architectural layers). Functional testing is also vitally important to Drupal but the focus of a separate book page.

@@ -1,0 +1,1 @@
+Varbase is a product of [Vardot](https://www.vardot.com/), the enterprise Drupal solutions provider.

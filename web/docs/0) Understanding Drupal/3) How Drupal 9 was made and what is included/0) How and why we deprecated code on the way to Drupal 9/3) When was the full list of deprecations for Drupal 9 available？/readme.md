@@ -1,0 +1,1 @@
+The full deprecation list was finalized in Drupal 8.8.0, which was released on December 4, 2019.

@@ -1,0 +1,1 @@
+A total of 19-files have 'STARTERKIT' in their names, and need to be renamed, by replacing 'STARTERKIT' with your 'machine name'.

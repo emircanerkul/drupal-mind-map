@@ -1,0 +1,1 @@
+* There is no longer a `template.php` file. That file has been replaced by `mytheme.theme`. However, it still functions in much the same way allowing for hooks to modify output.

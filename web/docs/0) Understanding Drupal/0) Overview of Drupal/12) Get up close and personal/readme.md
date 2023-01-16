@@ -1,0 +1,3 @@
+Now that you’ve gotten a brief introduction to the Drupal way, why not [install Drupal on your server](https://drupal.org/project/drupal) or [test-drive Drupal online (simplytest.me)](https://simplytest.me/project/drupal) and try it for yourself?. The [Installation & Configuration guide](https://www.drupal.org/docs/8/install) gives step-by-step instructions if you need help getting started.
+
+Welcome to the community of Drupal users and happy site building!

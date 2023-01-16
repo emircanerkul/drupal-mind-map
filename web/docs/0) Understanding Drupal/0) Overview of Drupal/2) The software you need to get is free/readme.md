@@ -1,0 +1,3 @@
+Installing and running Drupal is completely free. This includes the 40,000+ [modules](https://www.drupal.org/project/project%5Fmodule) available to extend site functionality and the 2500+ [themes](https://www.drupal.org/project/project%5Ftheme) used for modifying site appearance.
+
+If you are running the site locally, you may also need to install a "stack" - the behind-the-scenes software that serves your website.

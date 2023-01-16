@@ -1,0 +1,19 @@
+### Simplified names of "element-x" helper classes
+
+Drupal 7 introduced some new classes: `element-hidden`, `element-invisible` and `element-focusable`. It was difficult to understand exactly what these classes did from their names, so [the class names were changed](/node/2022859). The new names should make the classes easier to understand and are more consistent with [HTML 5 Boilerplate](http://html5boilerplate.com/), a popular HTML 5 framework. Here is a conversion and usage table:
+
+| Before (7.x)      | After (8.x)                                                                                                                   | Notes                                                                                                                                                         |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| element-hidden    | hidden                                                                                                                        | Hide _both_ visually and from screenreaders (e.g.: an element that will be populated later with JavaScript or an element you will hide with JavaScript).      |
+| element-invisible | visually-hidden                                                                                                               | Hide visually, but available for screenreaders (e.g.: a menu title).                                                                                          |
+| element-focusable | visually-hidden focusable                                                                                                     | Allows a visually-hidden element to be navigated to using the keyboard (e.g.: skip-to-content links). The focusable class must be used with visually\-hidden. |
+| invisible         | This class is new in Drupal 8\. It hides the element both visually and from screenreaders, _but maintains the visual layout_. |                                                                                                                                                               |
+
+These classes are implemented in `core/modules/system/css/system.module.css`.
+
+For further information, please refer to:
+
+* [HTML 5 Boilerplate CSS documentation](https://github.com/h5bp/html5-boilerplate/blob/v4.2.0/doc/css.md#common-helpers)
+* [CSS in Action: Invisible Content Just for Screen Reader Users](http://webaim.org/techniques/css/invisiblecontent/)
+* [Hiding Content for Accessibility](http://snook.ca/archives/html%5Fand%5Fcss/hiding-content-for-accessibility)
+* [Twig best practices for preprocessing functions and templates](https://www.drupal.org/docs/8/theming/twig/twig-best-practices-preprocess-functions-and-templates) if you are working with Drupal 7 themes.

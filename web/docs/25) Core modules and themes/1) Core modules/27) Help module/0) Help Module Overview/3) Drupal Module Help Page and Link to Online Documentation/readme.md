@@ -1,0 +1,3 @@
+![](https://www.drupal.org/files/help_module_pg_0.jpg)Each module's help page also references its corresponding online [documentation](https://www.drupal.org/documentation) module page. The online documentation contains more extensive and up-to-date information and serves as the definitive reference point for all Drupal documentation.
+
+_**Request to Module Maintainers**_: Please see the [Help text documentation template](https://www.drupal.org/node/632280) to make sure your **help hook** matches the standard for all core and contributed modules.

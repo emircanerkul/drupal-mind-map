@@ -1,0 +1,3 @@
+The upgrade process maintains the unique identifiers from the source site. For example, if a user account had the unique ID 2 on the source site (thus was at the relative URI /user/2), after upgrade the same user account will be at /user/2 on the new site. If you were to create a user account on the new site beyond the default administrator account, it would be assigned user ID 2 - then, when running the upgrade process, the account from the source site with user ID 2 would overwrite it. This applies to user accounts, taxonomy terms, and node content, as well as pretty much any other kind of content with numeric IDs from your source site.
+
+To avoid data loss, do not manually create anything on the Drupal site until all your source content has been fully imported.

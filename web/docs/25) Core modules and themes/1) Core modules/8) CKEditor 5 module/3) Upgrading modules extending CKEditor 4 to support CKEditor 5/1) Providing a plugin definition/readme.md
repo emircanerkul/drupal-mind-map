@@ -1,0 +1,1 @@
+Plugins can be defined in YAML, PHP or a combination of the two. For more information, read the [CKEditor 5 Drupal module API documentation](https://api.drupal.org/api/drupal/core%21modules%21ckeditor5%21ckeditor5.api.php/group/ckeditor5%5Farchitecture/9.3.x).

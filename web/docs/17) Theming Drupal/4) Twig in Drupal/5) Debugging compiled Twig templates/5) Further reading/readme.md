@@ -1,0 +1,1 @@
+For more information about the implementation of the Twig environment settings in Drupal, visit [#1843034: Make Twig settings configurable](https://www.drupal.org/project/drupal/issues/1843034 "Status: Closed (fixed)")

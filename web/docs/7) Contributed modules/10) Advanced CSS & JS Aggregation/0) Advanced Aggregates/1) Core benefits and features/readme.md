@@ -1,0 +1,6 @@
+* AdvAgg for Drupal 8 has some significant differences from Drupal 7; instead of totally reworking asset handling, AdvAgg only applies some improvements. This is mostly because the core handling is much better. It is also better for compatibility with quite a few other modules such as http2\_server\_push.
+* Url query string to turn off AdvAgg for that request. `?advagg=0` will turn off file optimization if the user has the "bypass advanced aggregation" permission. `?advagg=-1` will completely bypass all of Advanced CSS/JS Aggregations modules and submodules. `?advagg=1` will enable Advanced CSS/JS Aggregation if it is currently disabled.
+* Button on the admin page for dropping a cookie that will turn off file optimization. Useful for theme development.
+* Gzip support. All optimized files can be pre-compressed into a .gz file and served from the server. This is faster then gzipping the file on each request.
+* Brotli support. All optimized files can be pre-compressed with the newer brotli compression algorithm; this often shows close to 30% improvements in file size vs gzip. Requires the brotli php extension is installed.
+* With various submodules substantially improved front end performance through minification of assets and other techniques can be achieved. Read more below.

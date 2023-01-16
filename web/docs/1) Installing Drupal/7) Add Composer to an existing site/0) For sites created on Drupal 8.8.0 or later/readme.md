@@ -1,0 +1,1 @@
+Even if you installed Drupal 8.8.0 from the tarball, Composer was pre-installed. So you should be able to manage your site using Composer without taking any extra steps to convert the site.

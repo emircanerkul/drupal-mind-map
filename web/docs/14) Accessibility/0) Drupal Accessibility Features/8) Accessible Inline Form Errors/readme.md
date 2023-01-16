@@ -1,0 +1,1 @@
+Drupal forms are more accessible with the addition of accessible inline form errors module. This is available in Core but not enabled by default. It is now easier for everyone to identify what errors they might have made when filling in a web form. **You need to manually enable this module.** 

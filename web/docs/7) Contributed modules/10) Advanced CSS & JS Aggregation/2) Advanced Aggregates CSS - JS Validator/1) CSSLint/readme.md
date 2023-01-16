@@ -1,0 +1,1 @@
+Use the CSSLint JavaScript and the Drupal 8 core .csslintrc settings to lint the selected file(s) from your site.

@@ -1,0 +1,4 @@
+* To use this module the services documented in the openAPI specification do not have to be hosted on Apigee.
+* The **OpenAPI specification** field is optional. So you can still create a catalog entry to represent other non-REST services and support the discoverability within your organization. You can use the **Description field** to document or link out to other relevant documents.
+* The module lets you add additional fields on the API Doc entity so you can enrich your documentation. You can use views to create additional customized landing pages.
+* You can create your own custom field formatter to create a renderer of your choice. This can be useful to plugin other libraries to visualize your specifications. Currently you can use SmartDocs, Swagger UI or Redoc to render your API Documentation.

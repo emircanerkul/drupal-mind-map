@@ -1,0 +1,3 @@
+In the past, after a new major version, support would only be kept for the prior major version (such as Drupal 6 becoming end-of-life shortly after the release of Drupal 8). In light of the impact of COVID-19 on our community, [D](https://www.drupal.org/psa-2020-06-24)[rupal 7 is supported until November 1, 2023](https://www.drupal.org/psa-2022-02-23).
+
+This means Drupal 7 will be supported throughout Drupal 9's life. Stable migration support for core modules is a requirement of Drupal 9, and that even includes a supported migration path from Drupal 6.

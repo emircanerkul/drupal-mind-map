@@ -1,0 +1,3 @@
+There is a complete example on how [Commerce 2 Product Variations can be migrated to Drupal](https://www.drupal.org/docs/8/api/migrate-api/migrate-destination-plugins-examples/migrating-commerce-2-product-variations) from an external source system that provides the source data in JSON format. The example uses the URL source plugin with HTTP Basic authentication provided by the Migrate Plus module. Migrate Plus also provides the HTTP fetcher and JSON parser plugins used in the example.
+
+See also [Pull Content From a Remote Drupal 8 Site Using Migrate and JSON API](https://www.lullabot.com/articles/pull-content-from-a-remote-drupal-8-site-using-migrate-and-json-api) by Karen Stevenson (2016).

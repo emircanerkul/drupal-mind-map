@@ -1,0 +1,1 @@
+The **APIs** landing page is a Drupal view. You can modify it by editing the **API Catalog** view under **Structure > Views** in the admin menu.

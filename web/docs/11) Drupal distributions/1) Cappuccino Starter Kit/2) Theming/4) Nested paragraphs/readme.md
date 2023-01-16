@@ -1,0 +1,1 @@
+Some of the paragraphs can contain other paragraphs. Then the markup of the contained paragraphs will be wrapped by the host paragraph. A few examples include the Visibility paragraph, Tab item and Accordion item.

@@ -1,0 +1,1 @@
+The most notable difference with Drupal 7 is that [.info files have become YAML files that use .info.yml as an extension](/node/1935708).

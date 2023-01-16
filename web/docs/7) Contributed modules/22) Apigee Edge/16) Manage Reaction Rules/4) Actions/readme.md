@@ -1,0 +1,3 @@
+The Actions module includes a wide-range of built-in Actions that you can select when implementing Rules within your developer portal. You can also extend the module to create custom Actions to react to Events and Conditions. To learn more about customizing Actions within the module, see **[How to implement custom actions](https://www.drupal.org/docs/8/modules/d8-rules-essentials/for-developers/actions)**.
+
+To learn more about Drupal Reaction Rules and how the Actions module works with Rules to automate events in your developer portal, see [What is Rules](https://www.drupal.org/docs/8/modules/d8-rules-essentials/what-is-rules)?

@@ -1,0 +1,1 @@
+If authors are publishing content in more than one language consider enabling the language button in CKEditor. We added this button in Drupal to make it easier for authors to inform screen readers if a string of text in a page is in a non-dominant language. **This needs to be added to the WYSIWYG controls by an administrator.** 

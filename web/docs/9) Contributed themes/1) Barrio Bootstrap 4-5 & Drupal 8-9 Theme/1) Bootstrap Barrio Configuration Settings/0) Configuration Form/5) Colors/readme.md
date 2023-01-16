@@ -1,0 +1,1 @@
+System Messages Color Scheme Replace standard color scheme for the system maintenance alerts with Google Material Design color scheme.

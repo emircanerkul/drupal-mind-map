@@ -1,0 +1,1 @@
+Download the theme to your-drupal-site-name/themes/ and go to your-site-domain/admin/appearance and scroll to the bottom until you see W3CSS Theme and click on Install and set as default and click save.

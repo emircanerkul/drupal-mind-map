@@ -1,0 +1,1 @@
+While Drupal core does not require Drush, many people do use Drush. [Refer to the Drush version compatibility page](https://www.drush.org/latest/install/#drupal-compatibility) for information on supported versions.

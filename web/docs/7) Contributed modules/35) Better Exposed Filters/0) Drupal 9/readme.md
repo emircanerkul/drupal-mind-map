@@ -1,0 +1,1 @@
+The module expects the [jquery-ui-touch-punch](https://github.com/furf/jquery-ui-touch-punch) library to be found in the **/web/libraries** folder: **/web/libraries/jquery-ui-touch-punch**

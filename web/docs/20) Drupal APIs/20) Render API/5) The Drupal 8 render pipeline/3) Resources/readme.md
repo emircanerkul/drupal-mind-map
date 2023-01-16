@@ -1,0 +1,2 @@
+* Talk: [Drupal 8's render pipeline](http://wimleers.com/talk/drupal-8-render-pipeline)
+* Blog post: [Launching an AJAX modal from a WYSWIYG link and customising the response with MainContentRendererInterface in Drupal 8](https://www.previousnext.com.au/blog/launching-ajax-modal-from-wyswiyg-link-and-customising-response-maincontentrendererinterface)

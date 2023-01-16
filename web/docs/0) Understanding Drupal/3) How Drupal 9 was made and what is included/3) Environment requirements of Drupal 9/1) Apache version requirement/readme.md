@@ -1,0 +1,1 @@
+If you are running Drupal 9 on Apache, at least version 2.4.7 is required.

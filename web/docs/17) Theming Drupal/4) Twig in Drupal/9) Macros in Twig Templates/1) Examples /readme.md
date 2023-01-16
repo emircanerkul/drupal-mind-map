@@ -1,0 +1,1 @@
+In Drupal 8+, a macro is used to create, for example, the main navigation (see [menu.html.twig](https://api.drupal.org/api/drupal/core%21modules%21system%21templates%21menu.html.twig/9)).

@@ -1,9 +1,9 @@
 import { simpleDeepClone } from '@emircanerkul/simple-mind-map/src/utils/index'
 import Vue from 'vue'
-
 const SIMPLE_MIND_MAP_DATA = 'SIMPLE_MIND_MAP_DATA'
 const SIMPLE_MIND_MAP_LANG = 'SIMPLE_MIND_MAP_LANG'
 const SIMPLE_MIND_MAP_LOCAL_CONFIG = 'SIMPLE_MIND_MAP_LOCAL_CONFIG'
+
 
 /**
  * @Author: 王林
@@ -32,7 +32,8 @@ export const getData = () => {
       "config": {
       }
     },
-    "layout": "logicalStructure",
+    "scaleRatio": 0.01,
+    "layout": "mindMap",
     "root": {
       "id": "drupal",
       "data": {
@@ -69,47 +70,79 @@ export const getData = () => {
   }
 
   const docs = require.context('../../docs', true, /readme\.md$/)
-  require.context('../../docs', true, /\.md$/).keys().map(doc => {
-
-    let hierarchy = doc.slice(2, doc.length - 10).split('/');
-    let { html, attributes } = docs(doc);
-    hierarchy.forEach((e, i) => {
-      let result = findNodeById(tree.root, e);
-
-      if (e == '') {
-        tree.root.data.text = html;
-      } else if (result == null) {
-        if (i == 0) {
-          tree.root.children.push({
-            "id": e,
-            "data": {
-              "title": e,
-              "text": html,
-              ...attributes
-            },
-            "children": []
-          })
-        } else {
-          findNodeById(tree.root, hierarchy[i - 1]).children.push({
-            "id": e,
-            "data": {
-              "title": e,
-              "text": html,
-              ...attributes
-            },
-            "children": []
-          })
-        }
-      } else {
-        result.data = {
-          "title": e,
-          "text": html,
-          ...attributes
-        };
-      }
-    })
+  let mdKeys = require.context('../../docs', true, /\.md$/).keys();
+  mdKeys.sort((a, b) => {
+    return a.length - b.length
   });
 
+  mdKeys.map((doc, index) => {
+    let hierarchy = doc.slice(2, doc.length - 10).split('/');
+    let i = hierarchy.length - 1;
+    let e = hierarchy[i]
+    let { html, attributes } = docs(doc);
+    let result = findNodeById(tree.root, e);
+
+    // e = e.replace(/[0-9]*\)\ /, '');
+    if (e == '') {
+      tree.root.data.text = html;
+    } else if (result == null) {
+      if (i == 0) {
+        tree.root.children.push({
+          "id": e,
+          "data": {
+            "title": e,
+            "text": html,
+            expand: false,
+            ...attributes
+          },
+          "children": []
+        })
+      } else {
+        findNodeById(tree.root, hierarchy[i - 1]).children.push({
+          "id": e,
+          "data": {
+            "title": e,
+            "text": html,
+            expand: false,
+            ...attributes
+          },
+          "children": []
+        })
+      }
+    } else {
+      result.data = {
+        "title": e,
+        "text": html,
+        expand: false,
+        ...attributes
+      };
+    }
+  });
+
+  const sortTree = (tree) => {
+    if (Array.isArray(tree.children) && tree.children.length > 0) {
+      tree.children.sort((a, b) =>
+        parseInt(a.data.title.split(')')[0]) > parseInt(b.data.title.split(')')[0]) ? 1 : -1
+      )
+
+      tree.children.forEach((node) => {
+        sortTree(node);
+      });
+    }
+  }
+
+  const removeWeights = (tree) => {
+    if (Array.isArray(tree.children) && tree.children.length > 0) {
+      tree.data.title = tree.data.title.slice(3);
+
+      tree.children.forEach((node) => {
+        removeWeights(node);
+      });
+    }
+  }
+
+  sortTree(tree.root);
+  removeWeights(tree.root);
   return simpleDeepClone(tree)
 }
 
@@ -119,15 +152,7 @@ export const getData = () => {
  * @Desc: 存储思维导图数据
  */
 export const storeData = data => {
-  try {
-    let originData = getData()
-    originData.root = copyMindMapTreeData({}, data)
-    Vue.prototype.$bus.$emit('write_local_file', originData)
-    let dataStr = JSON.stringify(originData)
-    localStorage.setItem(SIMPLE_MIND_MAP_DATA, dataStr)
-  } catch (error) {
-    console.log(error)
-  }
+
 }
 
 /**
@@ -136,18 +161,7 @@ export const storeData = data => {
  * @Desc: 存储思维导图配置数据
  */
 export const storeConfig = config => {
-  try {
-    let originData = getData()
-    originData = {
-      ...originData,
-      ...config
-    }
-    Vue.prototype.$bus.$emit('write_local_file', originData)
-    let dataStr = JSON.stringify(originData)
-    localStorage.setItem(SIMPLE_MIND_MAP_DATA, dataStr)
-  } catch (error) {
-    console.log(error)
-  }
+
 }
 
 /**

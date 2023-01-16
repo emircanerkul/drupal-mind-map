@@ -1,0 +1,1 @@
+Create a custom block with the image and place the block into the **welcome text**'s region.

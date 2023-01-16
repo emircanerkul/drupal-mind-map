@@ -1,0 +1,1 @@
+A few modules work without any need for setting permissions or configuring. Most, however, require one or both. You'll find configuration instruction on each module's page, in its documentation, or readme.txt file.

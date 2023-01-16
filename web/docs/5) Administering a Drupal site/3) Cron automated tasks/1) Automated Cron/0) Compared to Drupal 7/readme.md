@@ -1,0 +1,1 @@
+Drupal 7 already had an "automated cron system", but Drupal 8 moved it into a separate module to allow sites that don't use it at all not have any overhead from it.

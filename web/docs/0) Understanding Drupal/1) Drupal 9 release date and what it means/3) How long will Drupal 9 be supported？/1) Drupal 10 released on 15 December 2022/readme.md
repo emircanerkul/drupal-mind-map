@@ -1,0 +1,1 @@
+Drupal 10 was released ahead of Drupal 9's end of life, similar to the transition between Drupal 8 and 9\. See the [release cycle overview](https://www.drupal.org/about/core/policies/core-release-cycles/schedule#drupal-10) for more information on possible release dates.

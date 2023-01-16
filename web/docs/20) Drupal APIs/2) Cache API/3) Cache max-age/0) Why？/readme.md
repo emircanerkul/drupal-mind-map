@@ -1,0 +1,3 @@
+Cache max-age provides a declarative way to create time-dependent caches.
+
+Some data is only valid for a limited period of time, in that case, you want to specify a corresponding maximum age. However, in Drupal core's case, we don't have any data that is valid for only a limited period of time; we typically cache permanently (see below) and rely entirely on [cache tags](/developing/api/8/cache/tags) for invalidation.

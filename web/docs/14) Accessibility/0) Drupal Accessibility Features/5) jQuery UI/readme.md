@@ -1,0 +1,1 @@
+jQuery UI delivers Drupal's autocomplete. We're also using their modal dialog now in Views UI and in other places. By working with the jQuery UI community we were able to improve accessibility for both projects.

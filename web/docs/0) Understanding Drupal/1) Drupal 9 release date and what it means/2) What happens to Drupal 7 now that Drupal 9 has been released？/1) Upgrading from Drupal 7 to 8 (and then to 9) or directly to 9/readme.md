@@ -1,0 +1,11 @@
+Now that Drupal 9 is released, you can upgrade directly from Drupal 7 to Drupal 9\. In most cases, this is your best upgrade route as it assures that your upgraded site has maximum expected life.
+
+Alternatively, you can upgrade to Drupal 8 first and then eventually to Drupal 9\. Reasons to upgrade first to Drupal 8 might include that your site requires a functionality provided by modules that are available in Drupal 8 but not yet in a Drupal 9-compatible release. Drupal 9 is identical to the final Drupal 8 release, but with deprecated code removed and third-party dependencies updated. Upgrading to Drupal 8 first will make the eventual upgrade to Drupal 9 far easier.
+
+There are three key tools used when migrating a Drupal 7 site to Drupal 8 or Drupal 9:
+
+1. Drupal core provides [the migrate module suite](https://www.drupal.org/docs/8/upgrade) to execute data/content migrations from Drupal 7\. This provides a good opportunity to build your site in the best way in Drupal 8 or Drupal 9 and import content to the right new places.
+2. The [Drupal 7 version of the Upgrade Status module](https://www.drupal.org/project/upgrade%5Fstatus) summarizes the Drupal 8 or Drupal 9 availability of the modules currently in use.
+3. The [Drupal Module Upgrader](https://www.drupal.org/project/drupalmoduleupgrader) is a command-line script that scans the source of a Drupal 7 module, flags any code that requires updating to Drupal 8 or 9, points off to any relevant API change notices, and (where possible) will actually attempt to convert the Drupal 7 code automatically to the Drupal 8 and 9 version. Drupal Module Upgrader has been updated to not use deprecated APIs in the generated code, meaning that if you are doing an upgrade first to Drupal 8 your eventual path to Drupal 9 will be smoother.
+
+To ensure a Drupal 8 update is also compatible with Drupal 9, [use drupal-check](https://github.com/mglaman/drupal-check) and/or the [Drupal 8 version of Upgrade Status](https://drupal.org/project/upgrade%5Fstatus) in your development and/or continuous integration environment and pay attention to Drupal 9 incompatibilities in your custom code.

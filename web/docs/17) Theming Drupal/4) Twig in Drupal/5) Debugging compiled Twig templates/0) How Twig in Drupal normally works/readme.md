@@ -1,0 +1,5 @@
+By default, the Twig theming engine compiles templates into PHP code and stores the compiled template code in the filesystem (by default these files will be in `sites/default/files/php/twig`).
+
+After Twig is finished with some markup, there's another layer of caching in the Render API. This takes the markup created by Twig, and often caches it in such a way that Twig isn't involved _at all_ in later page requests (if the cache metadata remains the same), so you may think Twig's debug or auto\_reload settings aren't working, when in fact the render cache needs to be refreshed (or disabled if you prefer).
+
+Caches can be cleared through Drupal's clear cache interface, but for ongoing development it's easier to change Drupal's settings so that the Render API does not cache anything at all. Be sure to test with the render cache on as well, otherwise it's easy to miss cache-related bugs that will occur on environments with caching enabled.

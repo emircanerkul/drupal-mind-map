@@ -1,0 +1,1 @@
+The [TabbingManager](https://drupal.org/node/1973218#tabbing) is a great mechanism for both non-visual and keyboard-only users. With this there is greater control over the order of salient page elements. This allows more centralized control for this means of navigating complex user interfaces.

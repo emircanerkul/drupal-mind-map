@@ -1,0 +1,1 @@
+More semantic HTML5 elements were added for better support assistive technology. We have supplemented this with WAI-ARIA elements such as landmarks, live regions, roles & properties.

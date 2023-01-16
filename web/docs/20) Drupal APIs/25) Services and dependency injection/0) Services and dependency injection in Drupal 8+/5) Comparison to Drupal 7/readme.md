@@ -1,0 +1,11 @@
+### Comparing Drupal 7 global functions to Drupal 8 services
+
+Let's take a look at the code required to invoke a module's hook as an example of the differences between Drupal 7 and 8\. In Drupal 7, you would use [module\_invoke\_all('help')](https://api.drupal.org/api/drupal/includes%21module.inc/function/module%5Finvoke%5Fall/7) to invoke all `hook_help()` implementations. Because we're calling the `module_invoke_all()` function directly in our code, there is no easy way for someone to modify the way Drupal invokes modules without making changes to the core function.
+
+In Drupal 8, the `module_*` functions are replaced by the ModuleHandler service. So in Drupal 8 you would use [\\Drupal::moduleHandler()->invokeAll('help')](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Extension%21ModuleHandler.php/function/ModuleHandler%3A%3AinvokeAll/8). In this example, `\Drupal::moduleHandler()` locates the registered implementation of the module handler service in via the _service container_ and then calls the invokeAll() method on that service.
+
+This approach is better than the Drupal 7 solution because it allows a Drupal distribution or hosting provider or another module to override the way invoking modules works by changing the class registered for the module handler service with another that implements `ModuleHandlerInterface`. The change is transparent for the rest of the Drupal code. This means more parts of Drupal can be swapped out without hacking core. The dependencies of code are also better documented and the borders of concern better separated. Finally, the services can be unit tested using their interface with more compact and quicker tests compared to integration tests.
+
+### Comparing Drupal 7 global variables vs. Drupal 8 services
+
+Several Drupal 7 global values like `global $language` and `global $user` are also now accessed via services in Drupal 8 (and not global variables). See [Drupal::languageManager()->getCurrentLanguage()](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Language%21LanguageManager.php/function/LanguageManager%3A%3AgetCurrentLanguage/8) and [Drupal::currentUser()](https://api.drupal.org/api/drupal/core%21lib%21Drupal.php/function/Drupal%3A%3AcurrentUser/8) respectively.

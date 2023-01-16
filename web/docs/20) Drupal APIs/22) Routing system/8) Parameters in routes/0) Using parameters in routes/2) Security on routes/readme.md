@@ -1,0 +1,2 @@
+* Route values are not sanitized by default, see [Parameters values validation in routes](/node/2399239) , This means that you really should sanitize all values prior to use.
+* Provide CSRF protection on routes , see [Access checking on routes](/docs/8/api/routing-system/access-checking-on-routes/csrf-access-checking) section on CSRF.

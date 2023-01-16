@@ -1,0 +1,1 @@
+![](https://www.drupal.org/files/DrupalCore.drawio.png)

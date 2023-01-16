@@ -1,0 +1,6 @@
+* [Form API #states by Angus Mak](https://www.lullabot.com/articles/form-api-states)
+* [Drupal 7 Form API: Using #states with multiple conditionals (AND, OR and XOR) by Slavko Pesic](https://www.metaltoad.com/blog/drupal-7-form-api-using-states-multiple-conditionals-and-or-and-xor) (Still valid for D8 and D9.)
+* [FAPI #states: Fix conditionals to allow OR and XOR constructions](https://www.drupal.org/node/735528) (Still valid for D8 and D9.)
+* [Discussion with many details in the drupal\_process\_states API docs.](https://api.drupal.org/comment/62866)
+* [Drupal 7 API docs for function drupal\_process\_states with many examples in the comments.](https://api.drupal.org/api/drupal/includes%21common.inc/function/drupal%5Fprocess%5Fstates/7.x) (Still valid for D8 and D9.)
+* Thanks to [Electric Larry and Paper Boy from .lowfidelity HEAVY INDUSTRIES](https://www.lowfidelity.at/leistungen/web/drupal-programmierung-und-hosting-fur-drupal-websites ".lowfidelity is a Vienna based studio focusing on Open Source and Drupal development.") for the screencasts and many of the code samples in this guide.

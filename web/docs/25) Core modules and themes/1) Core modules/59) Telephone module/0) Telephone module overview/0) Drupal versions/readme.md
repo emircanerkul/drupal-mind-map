@@ -1,0 +1,1 @@
+Telephone is included in Drupal 8 core. To use, enable to telephone field type on the /admin/modules page. A [Telephone backport for Drupal 7 has also been created](/project/telephone).

@@ -1,0 +1,1 @@
+In D8, vocabularies are "Configuration Entities" and are not yet supported by core's REST. For starters, some folks are working towards GET as a minimum: [#2300677: POST/PATCH config entities via REST for config entity types that support validation](https://www.drupal.org/project/drupal/issues/2300677 "Status: Needs work")

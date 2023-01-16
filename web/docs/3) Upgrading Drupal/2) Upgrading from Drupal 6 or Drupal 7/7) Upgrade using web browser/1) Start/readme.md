@@ -1,0 +1,3 @@
+You can start the upgrade process by visiting the **/upgrade** path of your new Drupal site If you get a _Page not found_ error, verify you have enabled the 'Migrate Drupal UI' module.
+
+If an upgrade was not done then the Upgrade page provides information about the preparation steps that should be done before continuing with the upgrade. However, if an upgrade was done then you are asked if you want to import _new_ configuration and content. If you continue, for either of these situations, you are then asked to define the source site.

@@ -1,0 +1,1 @@
+For any issues with the platform we kindly ask you to use the [drupal.org](http://www.drupal.org/project/social) issue queue. This way we can centralise all the information and make the feedback available for other users for documentation purposes. Next to giving people the credit they deserve.

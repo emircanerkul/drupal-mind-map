@@ -1,0 +1,1 @@
+The Drupal 8 Forum module requires the modules Node, History, Taxonomy, Comment and Options. They are automatically enabled if you install the Forum module.

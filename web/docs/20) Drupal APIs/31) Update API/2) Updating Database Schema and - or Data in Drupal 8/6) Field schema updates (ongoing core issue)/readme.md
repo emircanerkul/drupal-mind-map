@@ -1,0 +1,1 @@
+See <https://www.drupal.org/project/drupal/issues/937442> for discussion and helpers to update field type schemas.

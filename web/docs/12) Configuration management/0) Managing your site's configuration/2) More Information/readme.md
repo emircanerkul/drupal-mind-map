@@ -1,0 +1,1 @@
+If you're looking for more in-depth information about the Configuration Management system in Drupal 8 or higher, you can check the handbook pages for [Configuration API](/node/1667894 "Configuration API overview | Drupal 8 guide on Drupal.org").

@@ -1,0 +1,1 @@
+The default configuration shipped with modules, distributions, and themes is imported into the active configuration store when the extensions are enabled. An extension's default configuration is found in its `config/install` directory. Again, Drupal only reads from that directory when the extension is installed.

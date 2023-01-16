@@ -1,0 +1,4 @@
+* Our community is rich with experts who want to see Drupal be as accessible as it can be; you can find champions in the issue queue, talking with accessibility experts at camps and cons, or by venturing into Drupal slack and reaching out on the #accessibility channel
+* Whether you have a dedicated champion, or you are acting as the champion yourself along with your other role(s), it is important to regularly reach out to maintainers for feedback on challenging questions and approaches, and we will be holding monthly office hours to make this easier
+* Do your own [accessibility reviews](https://www.drupal.org/docs/8/accessibility/how-to-do-an-accessibility-review) regularly
+* Be familiar with [WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) and [ATAG 2.0](https://www.w3.org/WAI/standards-guidelines/atag/glance/) essentials

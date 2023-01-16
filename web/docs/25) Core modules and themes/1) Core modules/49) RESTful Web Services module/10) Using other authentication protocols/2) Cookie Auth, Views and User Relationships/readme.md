@@ -1,0 +1,5 @@
+In older vesions of Drupal, it wasn't possible to use the "Basic Authentication" with Views, now it's possible, please [take a look here](https://www.drupal.org/project/drupal/issues/2228141).
+
+**If your Drupal installation is older than 8.2.x, read this:**
+
+Basic auth is not possible with Views. Cookie Auth is on by default and will provide context (e.g. an Authored By User relationship) to a view that needs to know about the logged-in user. To have this context, the connecting client application needs to provide the session cookie. See the preceding Guzzle example for how to login and set that cookie in the client. The method will be the same for any client platform (e.g. iOS using AFNetworking). After fetching the cookie by POSTing the name/pass to the /user endpoint, subsequent REST views requests can use User relationships.

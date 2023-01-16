@@ -15,11 +15,14 @@ class View {
     this.opt = opt
     this.mindMap = this.opt.mindMap
     this.scale = 1
+    this.origin = { x: this.mindMap.svg.node.width.baseVal.value/2, y: this.mindMap.svg.node.height.baseVal.value/2 }
     this.sx = 0
     this.sy = 0
     this.x = 0
     this.y = 0
     this.firstDrag = true
+    this.pt = this.mindMap.svg.node.createSVGPoint();
+
     this.setTransformData(this.mindMap.opt.viewData)
     this.bind()
   }
@@ -167,7 +170,7 @@ class View {
   transform() {
     this.mindMap.draw.transform({
       scale: this.scale,
-      // origin: 'center center',
+      origin: this.origin,
       translate: [this.x, this.y]
     })
     this.mindMap.emit('view_data_change', this.getTransformData())
@@ -180,6 +183,7 @@ class View {
    */
   reset() {
     this.scale = 1
+    this.origin = { x: this.mindMap.svg.node.width.baseVal.value/2, y: this.mindMap.svg.node.height.baseVal.value/2 }
     this.x = 0
     this.y = 0
     this.transform()
@@ -191,6 +195,13 @@ class View {
    * @Desc: 缩小
    */
   narrow() {
+    this.pt.x = this.mindMap.event.mousemovePos.x;
+    this.pt.y = this.mindMap.event.mousemovePos.y;
+    if (this.scale > 1)
+      this.origin = this.pt.matrixTransform(this.mindMap.svg.node.getScreenCTM().inverse());
+    else {
+      this.origin = { x: this.mindMap.svg.node.width.baseVal.value/2, y: this.mindMap.svg.node.height.baseVal.value/2 }
+    }
     if (this.scale - this.mindMap.opt.scaleRatio > 0.1) {
       this.scale -= this.mindMap.opt.scaleRatio
     } else {
@@ -206,6 +217,13 @@ class View {
    * @Desc: 放大
    */
   enlarge() {
+    this.pt.x = this.mindMap.event.mousemovePos.x;
+    this.pt.y = this.mindMap.event.mousemovePos.y;
+    if (this.scale > 1)
+      this.origin = this.pt.matrixTransform(this.mindMap.svg.node.getScreenCTM().inverse());
+    else {
+      this.origin = { x: this.mindMap.svg.node.width.baseVal.value/2, y: this.mindMap.svg.node.height.baseVal.value/2 }
+    }
     this.scale += this.mindMap.opt.scaleRatio
     this.transform()
     this.mindMap.emit('scale', this.scale)

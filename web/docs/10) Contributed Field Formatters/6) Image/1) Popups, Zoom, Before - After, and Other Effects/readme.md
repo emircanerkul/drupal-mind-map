@@ -1,0 +1,8 @@
+* [Cocoen BeforeAfter](https://www.drupal.org/project/cocoen%5Fbeforeafter)
+* [Image Hover Effects](https://www.drupal.org/project/image%5Fhover%5Feffects)
+* [Image Field Zoom](https://www.drupal.org/project/imagefieldzoom)
+* [Image Zoom](https://www.drupal.org/project/imagezoom)
+* [Magnific Popup](https://www.drupal.org/project/magnific%5Fpopup)
+* [Simple Image Popup](https://www.drupal.org/project/image%5Fpopup)
+* [Virtual Tour (Panellum)](https://www.drupal.org/project/virtual%5Ftour)
+* [Zurb TwentyTwenty](https://www.drupal.org/project/zurb%5Ftwentytwenty)

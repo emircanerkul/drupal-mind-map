@@ -1,0 +1,3 @@
+Your Zen subtheme will be at the bottom of the 'Appearance' page under the heading 'Uninstalled themes', alongside the base-theme Zen.
+
+Click the text-link "Install and set as default" for your subtheme, which will set it as your site's theme. Your subtheme will now have moved to the very top of the 'Appearance' page under the heading 'Installed themes'. That will also automatically move the base theme 'Zen' out of the section 'Uninstalled themes', and into the section 'Installed themes'.

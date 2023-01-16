@@ -1,0 +1,1 @@
+* [Authentication API](/developing/api/8/authentication)

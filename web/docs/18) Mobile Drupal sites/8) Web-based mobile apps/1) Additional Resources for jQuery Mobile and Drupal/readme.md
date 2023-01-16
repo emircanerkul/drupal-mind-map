@@ -1,0 +1,7 @@
+* [drupal.api.js](http://github.com/travist/drupal.api.js) \- An object-oriented JavaScript API library to interact with Services 3.x. Great for use within Drupal Mobile applications such as PhoneGap, etc.
+* [Building a mobile site in 45 minutes using Mobile Tools and Jquery Mobile](http://2012.fldrupalcamp.org/sites/default/files/slides/drupal-jqm.pdf) \- presentation by Michael Herchel at Florida Drupal Camp 2012
+* [jQuery Mobile](http://drupalcampnh.org/sessions/jquery-mobile) \- presentation by Jason Savino on the Mobile jQuery theme and the jQuery Mobile module at DrupalCamp New Hampshire 2011
+* [Building a mobile Drupal site](http://fleetthought.com/presentation-building-mobile-drupal-site) \- presentation by Mark Jarrell at DrupalCamp Nashville 2011
+* [Drupal on the go with jQuery Mobile](http://chicago2011.drupal.org/sessions/drupal-go-jquery-mobile) \- presentation by Tim Cosgrove and Brian McMurray at DrupalCon Chicago 2011
+* [960.gs on jQuery Mobile](http://jeromeetienne.github.com/jquery-mobile-960/) \- not a Drupal module, but still useful if you are planning to build the web applications for tablets with jQuery Mobile
+* [jDrupal](http://www.jdrupal.org/) \- JavaScript Library for Drupal REST (Services)

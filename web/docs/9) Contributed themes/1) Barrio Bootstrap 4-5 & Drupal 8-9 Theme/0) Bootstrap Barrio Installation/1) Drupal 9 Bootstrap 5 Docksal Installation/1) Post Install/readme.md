@@ -1,0 +1,1 @@
+* Subtheme is already enabled but still need to be compile running 'gulp' on the subtheme's folder.

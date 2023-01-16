@@ -1,0 +1,3 @@
+Contributed modules [Migrate Tools](https://www.drupal.org/project/migrate%5Ftools) and [Migrate Run ](https://www.drupal.org/project/migrate%5Frun)provide the `drush migrate-import` command that allow execution of an individual migration. The command `drush migrate-rollback` can be used to undo a migration so that it can be executed again after adjusting it.
+
+If the execution of a migration fails, its state may continue to say "Importing". Running the migration in this state again will give you an error message "Migration xxx is busy with another operation". To fix this you can stop and reset the migration with the `drush migrate-reset-status` command. You may need to clear your cache if you have made changes to the migration Yaml.

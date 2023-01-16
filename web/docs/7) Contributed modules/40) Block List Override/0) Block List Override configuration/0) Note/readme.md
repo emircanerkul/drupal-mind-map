@@ -1,0 +1,1 @@
+Adjust module configurations with care! If you remove any blocks currently in use, you will see messages about non-existant blocks in places where the blocks should appear.

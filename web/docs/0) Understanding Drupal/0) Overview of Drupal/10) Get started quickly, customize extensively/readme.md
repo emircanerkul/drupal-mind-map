@@ -1,0 +1,5 @@
+Drupal's flexibility is incredible, but installing it is surprisingly easy. With a simple FTP upload and a few short web-based configuration questions, you can connect to your database and have your first Drupal site up and running within an hour.
+
+Pick one of the included themes and just start adding content. Do you want to have visitors log in? Then you should switch "authentication" on or off. Want to switch on some of the included tools? Then you should turn on "forums"; enable commenting on node types; turn on the book module for wiki-like collaboration; create forms and polls; use taxonomy to give site content structured, hierarchical categorization or free-form tagging.
+
+Do you want your own skin applied to the site? Drupal's theme system uses the Twig templating system allows you to insert dynamic content without needing any raw PHP. Drupal’s generated markup is clean, standards-compliant HTML5\. No old-school tables. No cruft. No kidding.

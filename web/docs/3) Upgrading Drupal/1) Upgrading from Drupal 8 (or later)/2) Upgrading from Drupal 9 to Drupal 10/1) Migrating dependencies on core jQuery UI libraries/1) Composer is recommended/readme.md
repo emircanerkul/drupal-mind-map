@@ -1,0 +1,1 @@
+If composer is used to add these modules, the correct versions and any necessary dependencies will automatically be installed.

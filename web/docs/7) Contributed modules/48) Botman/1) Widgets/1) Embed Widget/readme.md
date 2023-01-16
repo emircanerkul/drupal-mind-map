@@ -1,0 +1,1 @@
+The embed widget displays your chatbot inline in the page (presumably in your content). This could be useful, for example, as a way to provide users with a deeper dive into a topic/content.

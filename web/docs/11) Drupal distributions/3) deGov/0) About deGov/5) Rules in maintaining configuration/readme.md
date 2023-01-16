@@ -1,0 +1,3 @@
+1. Make sure that identical configuration files are only located in 1 module
+2. Check the right module for containing your configuration. E.g. degov\_image\_and\_crop\_styles should have all configuration for image and crop styles.
+3. [Dependency inversion principle](https://en.wikipedia.org/wiki/Dependency%5Finversion%5Fprinciple): _Abstractions should not depend on details_. So let's say you have the "degov\_image\_and\_crop\_styles" module and the "degov\_crop\_style\_abc\_tweak" module (the last module is not existing in reality). The "degov\_image\_and\_crop\_styles" module should not depend on the "degov\_crop\_style\_abc\_tweak". Instead "degov\_crop\_style\_abc\_tweak" can depend on the "degov\_image\_and\_crop\_styles" module.

@@ -1,0 +1,5 @@
+It is possible to have so-called _options_ for your constraint. To do so, first add a public property for your new option to the constraint class. E.g., if you add a new public property `$count`, the name of your option would be `'count'`. You may also implement the methods [Constraint::getRequiredOptions()](https://api.drupal.org/api/drupal/vendor%21symfony%21validator%21Constraint.php/function/Constraint%3A%3AgetRequiredOptions/8.3.x) and [Constraint::getDefaultOption()](https://api.drupal.org/api/drupal/vendor%21symfony%21validator%21Constraint.php/function/Constraint%3A%3AgetDefaultOption/8.3.x), if needed.
+
+Once you have done that, you can pass values for these options to the constraint when you add a new constraint to a field or an entity. The second parameter of the `addConstraint()` method shown in step 3 is an array of option values keyed by option name. For example, to pass a count option with value 3 to a constraint: `addConstraint('example_constraint', ['count' => 3]);`
+
+To access the values of any constraint options in your constraint validator, just access the property you created, e.g. `$constraint->count` for the count option.

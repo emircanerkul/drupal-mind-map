@@ -1,0 +1,7 @@
+Solutions for content management struggle to balance flexibility and simplicity. If a solution is simple, it can only be used for a single purpose and if it is flexible, it may be too difficult for newcomers to learn.
+
+The average content management system (CMS) is like a toy truck. Specific assumptions have been made about how it will be used and these assumptions are difficult to override. Content management frameworks, on the other hand, are like the raw materials needed to make any toy—no assumptions have been made about how they'll be used and the builder needs expert technical knowledge in order to make anything at all.
+
+Drupal is designed to be the perfect content management solution provider for non-technical users who need both simplicity and flexibility. It accomplishes this through its modular approach of site-building. Unlike other CMSs, Drupal isn’t a prefabricated toy truck, but rather a collection of wheels, windshields, axles, frames, etc., that a toy-maker can easily connect together. With Drupal, a maker could create a toy truck and similarly can also create a toy such as an airplane, submarine, or robot. For this reason, Drupal may be described as both a content management system and a content management framework—one unified system that strives to have the strengths of both, without their deficiencies.
+
+So, whether a site builder is looking to create a news site, online store, social network, blog, wiki, or anything else, it’s just a matter of combining the right modules. The only limitation is the creator’s imagination.

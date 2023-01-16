@@ -1,0 +1,5 @@
+This document is intended to outline a basic process of using Git in the context of a basic site building, testing and deployment process. While there are many possible approaches to fitting Git into this process, this particular set of procedures should work in most circumstances and contains many best practices for using Git in this manner. When applied properly and with some forethought, Git is a very powerful tool for helping to manage collaboration, configuration and code changes during the life cycle of a Drupal-based project. Further documentation will be written to show how best to integrate other tools such as Drush into this process.
+
+This documentation assumes that the project will be following a basic 4-tier development environment model: developers work on most code locally, then push that code up through Development, Staging and Production environments. It can easily be adapted to fewer tiers, as necessary. We will be illustrating the process by building out a Drupal site called ‘FooProject’, and will use fooproject as a placeholder anywhere a project or site name would be used.
+
+![](https://www.drupal.org/files/workflow_6.jpg)

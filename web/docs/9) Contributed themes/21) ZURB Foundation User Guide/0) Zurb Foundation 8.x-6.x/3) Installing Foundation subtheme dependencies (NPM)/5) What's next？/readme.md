@@ -1,0 +1,1 @@
+Begin styling your subtheme by [editing your \_settings.scss file](https://www.drupal.org/docs/8/themes/zurb-foundation-user-guide/zurb-foundation-8x-6x/configuring-with-the-%5Fsettingsscss).

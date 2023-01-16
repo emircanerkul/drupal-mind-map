@@ -3,7 +3,6 @@ import LogicalStructure from './layouts/LogicalStructure'
 import MindMap from './layouts/MindMap'
 import CatalogOrganization from './layouts/CatalogOrganization'
 import OrganizationStructure from './layouts/OrganizationStructure'
-import TextEdit from './TextEdit'
 import { copyNodeTree, simpleDeepClone, walk } from './utils'
 import { shapeList } from './Shape'
 import { lineStyleProps } from './themes/default'
@@ -47,7 +46,6 @@ class Render {
     // 根节点
     this.root = null
     // 文本编辑框，需要再bindEvent之前实例化，否则单击事件只能触发隐藏文本编辑框，而无法保存文本修改
-    this.textEdit = new TextEdit(this)
     // 布局
     this.setLayout()
     // 绑定事件

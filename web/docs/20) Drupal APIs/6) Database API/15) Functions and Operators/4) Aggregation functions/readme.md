@@ -1,0 +1,5 @@
+* COUNT(expression)
+* SUM(expression)
+* AVG(expression)
+* MIN(expression)
+* MAX(expression)

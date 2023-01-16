@@ -1,0 +1,1 @@
+Drupal 8 uses Doctrine's Simple Annotation Parser, but that has been deprecated and will be removed from a future release without a replacement. We forked the part of the code we needed and included it with Drupal core.

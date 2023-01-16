@@ -1,0 +1,1 @@
+If you are looking documentation for the older version of Drupal, see [Drupal 7 guide](https://www.drupal.org/docs/7).

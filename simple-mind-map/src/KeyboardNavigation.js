@@ -50,6 +50,7 @@ export default class KeyboardNavigation {
   focus(dir) {
     // 当前聚焦的节点
     let currentActiveNode = this.mindMap.renderer.activeNodeList[0]
+    console.log(this.mindMap.renderer.activeNodeList);
     // 当前聚焦节点的位置信息
     let currentActiveNodeRect = this.getNodeRect(currentActiveNode)
     // 寻找的下一个聚焦节点

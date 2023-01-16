@@ -1,0 +1,1 @@
+To access statistics one needs the proper [permissions](/node/132202).

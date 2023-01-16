@@ -1,0 +1,1 @@
+Never! Nope, not in assertion messages, not for button labels, not for the text you assert on the page. You always want to test the literal string on the page, you don't want to test the Drupal translation system.

@@ -1,0 +1,3 @@
+* See issues: [#2811175: \[plan\] Add layouts to Drupal](https://www.drupal.org/project/ideas/issues/2811175 "Status: Closed (fixed)") and [#2867795: White screen (WSOD @ Drupal 8.3) ERROR: Cannot use object of type as array ](https://www.drupal.org/project/layout%5Fplugin/issues/2867795 "Status: Closed (won't fix)")
+* [How to render layouts](https://www.drupal.org/docs/8/api/layout-api/how-to-render-layouts), the new way.
+* [Layout plugin documentation](https://www.drupal.org/node/2619128)

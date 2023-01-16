@@ -1,0 +1,1 @@
+Drupal 9 requires at least PHP 7.3\. PHP 7.4 is also supported but not required. PHP 8 is supported from Drupal 9.1.0

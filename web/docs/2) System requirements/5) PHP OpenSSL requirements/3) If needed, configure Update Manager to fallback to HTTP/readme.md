@@ -1,0 +1,7 @@
+If you do not have access to change your site's PHP configuration, or all else fails, you can configure Drupal's Update Manager to fallback to using HTTP. This is not recommended, and less secure (potentially exposing you to a ["man-in-the-middle" attack](https://en.wikipedia.org/wiki/Man-in-the-middle%5Fattack) where a malicious site claims to be updates.drupal.org and gives you false information). However, not having _any indication_ that your site is missing available security updates for Drupal core and contributed modules and themes would probably be worse. So if you need to, you can set the following in your `settings.php` file:
+
+`$settings['update_fetch_with_http_fallback'] = TRUE;`
+
+In this case, the Update Manager will still try HTTPS first, but if that fails, instead of giving up and printing the error message, it will try again using HTTP and hopefully fetch available update data.
+
+If you've got this setting defined, and you try to "Check manually" (using the link on your site's Available Updates report) and you _still_ see error messages, make sure your website is connected to the internet, that your network settings are correct, etc. Debugging every possible situation where a site cannot make outbound requests is outside the scope of this documentation. Good luck!

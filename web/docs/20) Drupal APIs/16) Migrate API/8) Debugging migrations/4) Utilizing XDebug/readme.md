@@ -1,0 +1,1 @@
+Various files are useful to start putting breakpoints in starting with `core/modules/migrate/src/Plugin/Migration.php` and `core/modules/migrate/src/MigrateExecutable.php.` For a list of fields and their values being pulled from the source plugin, put a breakpoint in the `next()` function in `core/modules/migrate/src/Plugin/migrate/source/SourcePluginBase.php`.

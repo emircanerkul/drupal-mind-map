@@ -1,0 +1,1 @@
+There are other dependencies updated on the frontend and backend alike. The above are the most important ones. A more complete list will be available in the 9.0.0 release notes.

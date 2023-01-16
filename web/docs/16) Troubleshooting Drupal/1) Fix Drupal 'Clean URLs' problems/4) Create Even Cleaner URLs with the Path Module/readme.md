@@ -1,0 +1,1 @@
+Using _Clean URLs_ will cause Drupal to generate URLs in the form "<http://www.example.com/node/83>." In order to change the 'node/##' portion of the URL to something more like 'news/june-1st-news' a site will need the [Path module](/handbook/modules/path) enabled. See the [Path module handbook page](/handbook/modules/path) for more information on using the path module.

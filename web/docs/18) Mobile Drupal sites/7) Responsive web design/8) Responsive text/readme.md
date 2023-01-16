@@ -1,0 +1,2 @@
+* FitText module <http://drupal.org/project/fit%5Ftext> (based on [http://fittextjs.com](http://fittextjs.com/))
+* Responsive Typography, reference of core concepts by Tim Brown - <http://nicewebtype.com/notes/responsive-typography/>

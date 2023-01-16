@@ -1,0 +1,1 @@
+See the [rationale for adding the JSON:API module to Drupal core](https://www.drupal.org/project/ideas/issues/2836165), and the [module architecture rationale](https://cgit.drupalcode.org/jsonapi/tree/jsonapi.api.php).

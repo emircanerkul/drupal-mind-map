@@ -1,0 +1,1 @@
+![](https://www.drupal.org/files/help_modules_all_2.jpg)The core Help landing page provides an overview (like a table of contents), of all enabled modules in a site, for which Help is available. The image here contains a sample of such overview.

@@ -1,0 +1,3 @@
+See this amazing contribution by the Drupal Community at <https://github.com/lquessenberry/OpenSocialOnPantheon> to get Open Social installed on Pantheon.
+
+_You will need to adjust the composer.json file to include the changes required for 1.5, see instructions at [https://www.drupal.org/docs/8/distributions/open-social/updating-open-so...](https://www.drupal.org/docs/8/distributions/open-social/updating-open-social-to-15-with-composer)._

@@ -1,0 +1,2 @@
+* [Content Moderation](/docs/8/core/modules/content-moderation) is a core module that harnesses the Workflows module to allow revisionable content entities to move between different moderation states.
+* [Workflows Field](/project/workflows%5Ffield) is a contributed module that allows for generic state transitions, but is unconcerned with publishing (unlike Content Moderation).

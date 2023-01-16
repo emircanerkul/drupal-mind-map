@@ -1,0 +1,3 @@
+Well, you’re already here, in the D8F6 docs. So step through our documentation (next: [Installing Drupal Zurb Foundation](https://www.drupal.org/docs/8/themes/zurb-foundation-user-guide/zurb-foundation-8x-6x/installing-the-drupal-foundation)) and have fun! And [check out the issues queue](https://www.drupal.org/project/issues/zurb%5Ffoundation?status=All&categories=All) if you run into any difficulty or bugs.
+
+[Go to the ZURB Foundation project page](https://www.drupal.org/project/zurb%5Ffoundation).

@@ -7,15 +7,11 @@ import Style from './src/Style'
 import KeyCommand from './src/KeyCommand'
 import Command from './src/Command'
 import BatchExecution from './src/BatchExecution'
-import Export from './src/Export'
-import Select from './src/Select'
-import Drag from './src/Drag'
 import MiniMap from './src/MiniMap'
 import { layoutValueList } from './src/utils/constant'
 import { SVG } from '@svgdotjs/svg.js'
 import xmind from './src/parse/xmind'
 import { simpleDeepClone } from './src/utils'
-import KeyboardNavigation from './src/KeyboardNavigation'
 
 // 默认选项配置
 const defaultOpt = {
@@ -119,34 +115,11 @@ class MindMap {
       mindMap: this
     })
 
-    // 导出类
-    this.doExport = new Export({
-      mindMap: this
-    })
-
-    // 选择类
-    this.select = new Select({
-      mindMap: this
-    })
-
-    // 拖动类
-    this.drag = new Drag({
-      mindMap: this
-    })
-
-    // 键盘导航类
-    this.keyboardNavigation = new KeyboardNavigation({
-      mindMap: this
-    })
-
     // 批量执行类
     this.batchExecution = new BatchExecution()
 
     // 初始渲染
     this.reRender()
-    setTimeout(() => {
-      this.command.addHistory()
-    }, 0)
   }
 
   /**

@@ -1,0 +1,1 @@
+* [Configuration Replace](https://www.drupal.org/project/config%5Freplace): Allows to replace existing config partly and in full. Let's you use a folder called "rewrite" with the config meant to replace. This module can safe you the writing of install and update hooks. Configuration Replace will throw a PHP exception, if you try to replace config, which is not existing.

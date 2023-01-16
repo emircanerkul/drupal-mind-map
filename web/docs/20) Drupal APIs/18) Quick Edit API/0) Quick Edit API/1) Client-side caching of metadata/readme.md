@@ -1,0 +1,5 @@
+In order to function, Quick Edit needs quite a bit of metadata. For every field, it needs to know the label, which in-place editor to use, whether the current user is allowed to edit a field and potentially custom metadata specific to the in-place editor to use.
+
+That metadata needs to be retrieved from the server (i.e. Drupal), but doing so on every page load would be wasteful and slow. That's why Quick Edit caches this information on the client-side. It caches this in `sessionStorage`, which means that merely closing and reopening the browser tab will already clear this cache. This prevents this cache from growing too large. It's also invalidated automatically when the current user's permissions change.
+
+While developing new in-place editor plugins for Quick Edit, you'll want to clear `sessionStorage`, or at least the key-value pairs stored in it whose keys have the `Drupal.quickedit.metadata.` prefix.

@@ -1,0 +1,16 @@
+> Each **Group** is an entity, which can have multiple bundle "group types". Any other entity, such as a Node can be associated with a Group via a relationship entity, confusingly called a "group content" entity. Note that the group content entity doesn't contain the content itself, it is merely an entity that forms the relation between the group and the actual content. The "gnode" submodule provides the group content entity for Nodes.  
+> 
+> Each group has a set of roles and permissions that users can be assigned to. Pre-created roles include "admin", "member", "outsider", and "anonymous". For example, members of a group can be given permission to create or comment on content. If a user is not assigned as a member (outside or anonymous) they might be able to view content but not add or discuss it.
+
+> In **OG**, any Node can be marked as a Group. So a group is still an "entity", but it is specifically a node entity. OG also has roles and permissions, such as "member". However, when a user is added to a group, a og\_membership relationship entity is created. Node content is placed into a group via a simple entity-reference field on the node, pointing to the group node that it belongs to.
+
+Source: [Building Community Sites in Drupal 8: A Guide To D8 Modules For Community Support Sites](https://www.phase2technology.com/blog/building-community). 
+
+| [Group](https://www.drupal.org/project/group) | [Organic Groups](https://www.drupal.org/project/og)                                      |                                                                 |
+| --------------------------------------------- | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| group                                         | Group content entity                                                                     | any entity of a bundle that is marked as a group in og.settings |
+| group content                                 | Both the group and the group content are related entities on GroupContent content entity | any entity with an entity reference to a group                  |
+| group type                                    | GroupType config entity (bundle of Group)                                                |                                                                 |
+| membership                                    | intrinsic                                                                                | OgMembership content entity                                     |
+| membership type                               | GroupMembership                                                                          | OgMembershipType config entity                                  |
+| group role                                    | GroupRole config entity                                                                  | OgRole config entity                                            |

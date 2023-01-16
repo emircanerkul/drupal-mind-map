@@ -1,0 +1,1 @@
+The contributed module [Migrate Scheduler](https://www.drupal.org/project/migrate%5Fscheduler) provides a way to execute the migrations on a configurable schedule. It also provides options to execute the migrations with an `--sync` flag or an `--update` flag, or both.

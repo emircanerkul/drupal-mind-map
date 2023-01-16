@@ -1,0 +1,7 @@
+---
+url: https://www.drupal.org/docs/contributed-modules/blog
+description: Documentation for the Drupal 8 contributed Blog module.
+published_time: '2016-11-22T12:04:52+00:00'
+modified_time: '2016-11-22T12:04:52+00:00'
+---
+Documentation for the Drupal 8 contributed Blog module.

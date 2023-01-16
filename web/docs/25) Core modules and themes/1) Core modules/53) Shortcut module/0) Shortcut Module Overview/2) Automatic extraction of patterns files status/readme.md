@@ -1,0 +1,1 @@
+Yes, supported in versions >= 7.x-2.x

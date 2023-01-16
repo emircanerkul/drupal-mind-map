@@ -1,0 +1,1 @@
+The demo content is being generated from YML files. All content is unique by a UUID. Also all entity references are done using these unique UUIDs.

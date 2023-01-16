@@ -1,0 +1,3 @@
+PHP supports a wide variety of hashing algorithms with [crypt()](http://php.net/manual/en/function.crypt.php) or [password\_hash()](http://us2.php.net/manual/en/function.password-hash.php). For example, a password 'test' hashed with Blowfish algorithm could result into the following salted hash: $2y$10$7OH7jh2tEXommZFO9GQMze7h94Py3n.RcjWM/0eG8xslwwDwXip/S
+
+If the source system was a PHP based application that used `crypt()` or `password_hash()`, these hashes should work as-is and they can be migrated 1:1 like in the Phpass example above. When the user logs in to your Drupal 8 site for the first time, Drupal will re-hash the password.

@@ -1,0 +1,2 @@
+* degov\_image\_and \_crop\_styles: Contains all config regarding image and crop styles. All configs for them should rely in that module.
+* degov\_node\_overrides: Contains config for node content types and fields.

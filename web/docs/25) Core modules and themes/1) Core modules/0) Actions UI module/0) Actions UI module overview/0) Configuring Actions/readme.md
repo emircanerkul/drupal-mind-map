@@ -1,0 +1,1 @@
+From the Actions page, you can configure or create actions. To create an advanced action, select the action from the drop-down list in the advanced action section and click the Create button.

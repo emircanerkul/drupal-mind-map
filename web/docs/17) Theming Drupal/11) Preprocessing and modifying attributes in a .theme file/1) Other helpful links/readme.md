@@ -1,0 +1,2 @@
+* [A search through the API of preprocess implementations in the core.](https://api.drupal.org/api/drupal/8/search/preprocess)
+* [hook\_preprocess\_HOOK API documentation](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Render%21theme.api.php/function/hook%5Fpreprocess%5FHOOK/8.4.x) ([8.4.x version](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Render%21theme.api.php/function/hook%5Fpreprocess%5FHOOK/8.4.x))

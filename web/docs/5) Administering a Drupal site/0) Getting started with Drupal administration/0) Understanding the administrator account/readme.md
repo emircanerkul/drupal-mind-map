@@ -1,0 +1,5 @@
+At the end of the installation process, the person who performed the installation is automatically logged into the site with the administrator account. You may see the administrator account referred to as User 1\. This administrative account is automatically given **all privileges** for managing content and administering the site, so [securing the User 1 account](https://www.drupal.org/docs/user%5Fguide/en/user-admin-account.html " The User 1 Account | Drupal 8 User Guide guide on Drupal.org") is key:
+
+* Don't share this account. Instead, grant users permissions by creating accounts and assigning them to roles.
+* Don't name the first account 'admin' or something obvious.
+* For maximum security, site administrators might consider ways to [limit or eliminate access](https://www.drupal.org/docs/user%5Fguide/en/user-admin-account.html " The User 1 Account | Drupal 8 User Guide guide on Drupal.org") to the User 1 account altogether.

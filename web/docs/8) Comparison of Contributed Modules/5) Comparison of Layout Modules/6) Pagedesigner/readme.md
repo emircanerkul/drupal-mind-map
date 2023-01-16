@@ -1,0 +1,1 @@
+* [Pagedesigner](https://www.drupal.org/project/pagedesigner): Module for structuring, designing and creating content for Drupal websites with a drag'n'drop interface. The whole frontend is implemented with the web builder framework GrapesJS, which provides a clear and easy-to-use graphical interface for users of all kinds.

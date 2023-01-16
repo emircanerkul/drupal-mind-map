@@ -1,0 +1,2 @@
+<!-- note-warning -->
+> WARNING: Avoid editing the ZURB Foundation parent theme at themes/contrib/foundation. Your subtheme should hold all of your configurations and inherit from the parent theme. That way we can make updates to the theme project, take advantage of new improvements and you won't lose any changes

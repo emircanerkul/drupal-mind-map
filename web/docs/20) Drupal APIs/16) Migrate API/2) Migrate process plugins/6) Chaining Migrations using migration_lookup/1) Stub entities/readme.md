@@ -1,0 +1,7 @@
+In the Users and Nodes example, the last part of the `d7_node` migration is the `migration_dependencies` section. Since `d7_user` is listed as a requirement, the `d7_node` migration will not run until the `d7_user` migration is complete. This means that user entities have been created, and their IDs are known, when the `migration_lookup` plugin is called.
+
+In some cases, it is not possible to create all the referenced entities before running a migration. For example, an Article content type might have "previous" and "next" links to other Article nodes. In this case, the lookup will fail. By default, the `migration_lookup` plugin will create a stub entity and return its ID. Later, the appropriate migration will find the stub entity and update it instead of creating a new entity.
+
+### Migrate Magician
+
+There is a contrib module called [Migrate Magician](https://www.drupal.org/project/migmag) which aims [improve on the stubbing functionality](https://www.drupal.org/docs/contributed-modules/migrate-magician/migrate-magician-process-plugins-110) provided by core, and might be worth exploring for new migrations. There's however a current limitation with the module where the stubbing lookup only works with Drupal database sources - [#3294768: MigMagLookup shouldn't (implicitly) depend on Migrate Drupal](https://www.drupal.org/project/migmag/issues/3294768 "Status: Closed (fixed)").

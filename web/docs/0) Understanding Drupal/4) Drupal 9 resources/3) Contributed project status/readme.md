@@ -1,0 +1,1 @@
+The [Drupal 9 Deprecation Status tracker](https://dev.acquia.com/drupal9/deprecation%5Fstatus) is a good place to review contributed project readiness. It also has by-deprecation-error views and graphs to track readiness over time.

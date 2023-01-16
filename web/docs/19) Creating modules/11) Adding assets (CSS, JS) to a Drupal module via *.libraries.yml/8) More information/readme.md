@@ -1,0 +1,5 @@
+* [CSS coding standards](/node/1886770)
+* [JavaScript coding standards](https://www.drupal.org/node/172169)
+* [LibraryDiscoveryParser::parseLibraryInfo()](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Asset%21LibraryDiscoveryParser.php/function/LibraryDiscoveryParser%3A%3AparseLibraryInfo)
+* ["Performance improvements with Drupal 8 Libraries" by Rikki Bochow at PreviousNext](https://www.previousnext.com.au/blog/performance-improvements-drupal-8-libraries)
+* ["Inline JavaScript in Drupal 8"](https://dev.to/gapple/inline-javascript-in-drupal-8-4o28)

@@ -1,0 +1,1 @@
+Add 'Navigation bar toggler' block to some region, by default the best place to add it is to 'Navigation Second' region. Enable bs\_lib module to have 'Navigation bar toggler' block.

@@ -1,0 +1,3 @@
+**Note for users whose hosting providers use the "SiteZen site builder"**
+
+There seems to be a conflict between some host installations of the SiteZen site builder and the Zen directory name which causes broken tabs, css files to be "not found", and other issues. To learn more about this problem and to learn its solution, see [SiteZen builder causes "Page not found" errors for images, css, etc.](/node/457390).

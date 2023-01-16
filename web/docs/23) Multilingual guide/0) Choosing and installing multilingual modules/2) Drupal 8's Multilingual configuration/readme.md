@@ -1,0 +1,1 @@
+Continue onto [Chapter 10 - Making your site multilingual](https://www.drupal.org/docs/user%5Fguide/en/multilingual-chapter.html) in the user guide.

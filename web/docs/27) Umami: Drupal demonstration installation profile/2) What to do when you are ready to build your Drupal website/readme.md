@@ -1,0 +1,1 @@
+Once you've tried Drupal using Umami and want to build your own site, simply reinstall Drupal selecting the Minimal or Standard profiles from the install screen. You will then be able to upgrade to future versions of Drupal at will since those two profiles maintain backward compatibility.

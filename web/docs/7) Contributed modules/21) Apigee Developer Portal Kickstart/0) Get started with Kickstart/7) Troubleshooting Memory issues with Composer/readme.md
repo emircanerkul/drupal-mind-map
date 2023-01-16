@@ -1,0 +1,3 @@
+You may run into memory issues running composer. There are [multiple approaches to solving Composer memory errors](https://getcomposer.org/doc/articles/troubleshooting.md#memory-limit-errors), but a simple solution is to set a memory limit for Composer as an environment variable on your machine or server. For example, you can add this line to your `.bash_profile`, `.bashrc` or equivalent file:
+
+`export COMPOSER_MEMORY_LIMIT=2G`

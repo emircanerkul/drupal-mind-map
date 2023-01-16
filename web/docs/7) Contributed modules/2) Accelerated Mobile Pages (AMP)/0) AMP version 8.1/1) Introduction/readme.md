@@ -1,0 +1,3 @@
+The AMP module is designed to convert Drupal pages into pages that comply with the AMP standard. At this time, only node pages are converted.
+
+When the AMP module is installed, AMP can be enabled for any node type. At that point, AMP content becomes available on URLs such as `node/1?amp=1` or `node/article-title?amp=1`. There are also special formatters for text, image, and video fields geared towards outputting the appropriate AMP components.

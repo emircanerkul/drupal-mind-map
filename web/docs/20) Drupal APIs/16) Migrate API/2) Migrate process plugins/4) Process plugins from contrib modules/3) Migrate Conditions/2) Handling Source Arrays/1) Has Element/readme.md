@@ -1,0 +1,3 @@
+You can also use the [has\_element](https://www.drupal.org/docs/contributed-modules/migrate-conditions/migrate-conditions-condition-plugins/has-element) condition to evaluate a condition on each individual element of the source array. In contrast to all\_elements, has\_element will return true if at least one element in the source array meets the condition.
+
+The [has\_element](https://www.drupal.org/docs/contributed-modules/migrate-conditions/migrate-conditions-condition-plugins/has-element#s-3-determine-if-an-image-is-missing-alt-text) condition can be configured to run on a single element of the source array with a specified index/key.

@@ -1,0 +1,1 @@
+You can either apply 1\. from above as well or you can build your own container with mock versions of the services requested. Don't forget to set the container to an empty `ContainerBuilder` in `tearDown`. For [Example](https://api.drupal.org/api/drupal/core!tests!Drupal!Tests!Core!Session!UserSessionTest.php/8), this test sets a mock `entity.manager`.

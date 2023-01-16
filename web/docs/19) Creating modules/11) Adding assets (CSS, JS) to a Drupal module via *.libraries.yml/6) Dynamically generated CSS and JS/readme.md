@@ -1,0 +1,16 @@
+In extremely rare and advanced cases, you may have the need to dynamically generate CSS and JS. There are two categories of "dynamicness":
+
+1. Dynamically built, but used across multiple requests
+2. Dynamically built for each request
+
+If the dynamic CSS/JS is used across multiple requests, then you can use [hook\_library\_info\_alter()](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Render%21theme.api.php/function/hook%5Flibrary%5Finfo%5Falter/8.2.x) to modify a library to include your dynamically/automatically generated CSS/JS. An example in Drupal core of this is [color\_library\_info\_alter()](https://api.drupal.org/api/drupal/core%21modules%21color%21color.module/function/color%5Flibrary%5Finfo%5Falter). Realize that just using `hook_library_info_build()` or `hook_library_info_alter()` to append a library will not automatically make the library appear in the page. You still have to define it as an attachment (either for the page or for a certain element) by using any of the techniques above. 
+
+If the dynamic CSS/JS is built for each request, then you enter the truly advanced territory. This is hard, and for a good reason: per-request dynamic assets have to be built on _every single request_ and therefore slow Drupal down. We want to make it hard to make Drupal slow down, so this is why we don't offer a nice API for this — since we don't want you to do it.  
+It is possible though. In the case of dynamic JS: please consider using _configurable JavaScript instead_, that is almost always the much better choice. Then the logic is stored in a file (and can be reviewed, linted and cached on the client side), and only the settings to configure the logic in that file need to be generated on each request. And in fact, this can also be used for dynamic CSS: attach dynamic CSS as `drupalSettings` and let some JS file add it to the page.  
+If using `drupalSettings` plus a JavaScript file is not an option, then you still have one option left: use `hook_page_attachments()`, where you add a new value to `$page['#attached']['html_head']`, which contains either a `<script>` tag or a `<style>` tag, as the “Inline JavaScript that affects the entire page” section above already showed.
+
+### hook\_library\_info\_build() added for dynamic library definitions
+
+For some advanced use cases — like detecting 3rd party libraries that need to be downloaded manually, and then exposing those as Drupal asset libraries (think Libraries API module) — you want to be able to still use PHP code to register libraries using some additional logic. That's why [hook\_library\_info\_build()](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Render%21theme.api.php/function/hook%5Flibrary%5Finfo%5Fbuild/8.2.x) was added
+
+Note that "dynamic" doesn't mean "runtime" (i.e. for every request) — that'd be terrible for performance. The dynamically added libraries are still cached, just like libraries defined in YML files. This means that you still need to attach the library to a page or element using any of the above techniques. It's "dynamic" because you can use logic to control this attaching of the libraries.

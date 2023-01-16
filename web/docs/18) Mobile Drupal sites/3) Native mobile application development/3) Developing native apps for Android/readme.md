@@ -1,0 +1,6 @@
+* [One Drupal – Content Builder](https://play.google.com/store/apps/details?id=com.technikh.onedrupal) \- Login, Create & edit nodes, Upload images, Autocomplete term reference fields, Publish, Unpublish, Promote to front page, remove from front page(Demote).... with a [source repository on Github](https://github.com/onedrupal/One-Drupal-Android)
+* [DrupalCloud](https://github.com/INsReady/DrupalCloud) \- Android library for Drupal Services by [INsReady](http://drupal.org/node/1327988)[ Inc. (引锐信息科技有限公司)](http://drupal.org/node/1327988)
+* [My Android application for TShirtSlayer](http://dgtlmoon.com/drupal-android-xmlrpc-application) \- discussion of an Android, Drupal, XML-RPC app, with a [source repository on GitHub](https://github.com/dgtlmoon/tshirtslayer%5Fandroid)
+* [Building Android Apps with Drupal](https://www.youtube.com/watch?v=9rY1sTvGYYM) \- Presentation at DrupalCon Denver 2012 by [Jingsheng Wang](http://drupal.org/user/228712)
+* [Architect your business with Drupal and Android](http://chicago2011.drupal.org/sessions/architect-your-business-drupal-and-android) \- Business and strategy presentation from DrupalCon Chicago 2011 by [Jingsheng Wang](http://drupal.org/user/228712)
+* [Drupal 8 Android SDK](https://github.com/lemberg/d8androidsdk) \- SDK and sample app to connect native Android app with D8

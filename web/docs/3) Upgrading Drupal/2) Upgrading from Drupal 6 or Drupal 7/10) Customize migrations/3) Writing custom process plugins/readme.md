@@ -1,0 +1,5 @@
+If you need to define custom transformation logic (if this, then that) you might want to consider writing a custom process plugin. 
+
+The [example in Migrate API documentation](https://www.drupal.org/node/2917492) uses User migration as an example. The user’s language code determination needs if-else logic as described in the example and therefore the User module provides its own process plugin UserLangocode. 
+
+The example linked above describes how the process should be saved to the MODULE/src/Plugin/migrate/process directory and how it should be annotated so that it can be used. Use the [UserLangcode ](https://api.drupal.org/api/drupal/core%21modules%21user%21src%21Plugin%21migrate%21process%21UserLangcode.php/class/UserLangcode/8.4.x)and other process plugins as examples when writing your own!

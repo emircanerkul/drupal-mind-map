@@ -1,0 +1,3 @@
+Read this page if you may need to deviate from the standard because your site expects extremely high traffic or expects very little traffic. In those cases, adjusting cron settings will be important to keep your site performing at optimal levels for your traffic and computer hardware, by either increasing or decreasing the frequency of cron runs from Drupal core's defaults.
+
+Setting up cron is an important step in the installation of your Drupal website and assists in the maintenance of the site's assets for search results, checking for updates to Drupal core and modules, and removing temporary files.

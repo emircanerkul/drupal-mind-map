@@ -1,0 +1,5 @@
+The following special objects can be passed into a route's controller method if there is a parameter with the correct typehint. The name of the parameter is not important.
+
+* \\Symfony\\Component\\HttpFoundation\\Request: The raw Symfony request object. It is generally only useful if the controller needs access to the query parameters of the request. Note a few `Request` quirks: the $\_GET superglobal can be accessed in `$request->query` (and it's a `ParameterBag`, not an array) while the session information can be accessed via `$request->getSession()` which returns a session object with its own methods.
+* \\Drupal\\Core\\Routing\\RouteMatchInterface: The "route match" data from this request. This object contains various standard data derived from the request and routing process. To inspect the actual route, for example to check for parameters, or default values, or options, use $route\_match->getRouteObject().
+* \\Psr\\Http\\Message\\ServerRequestInterface: The raw request, represented using the PSR-7 ServerRequest format.

@@ -1,0 +1,3 @@
+Unlike many other languages, PHP is a very loosely typed language. It doesn’t have a clear definition of the different types of data it deals with. Therefore Drupal used to be the same. For example, there was no consistent way of telling if a field value is a string, an integer or a timestamp. Or even, to tell if something is translatable or accessible (as in permissions). Even if you as a developer happen to know that the value of a text field happens to be a string, there’s no consistent programmatic way of fetching this information. This creates a lot of problems when building machine readable APIs on Drupal that exposes its data to other systems.
+
+There needs to be a consistent way of typing this data, or describing the data.

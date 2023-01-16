@@ -1,0 +1,3 @@
+When adding media to the library, you are required to fill out any mandatory fields associated with that media type. A typical example is images, which for accessibility reasons always require you to fill in alternate text.
+
+In addition to required fields, all media types can have custom fields associated with them, and it is possible to expose these fields in the media library so that users can fill them out when adding new media. For example, you could allow your users to add tags or captions to media items they are adding to the library.

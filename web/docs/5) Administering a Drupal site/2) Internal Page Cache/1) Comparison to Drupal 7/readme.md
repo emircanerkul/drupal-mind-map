@@ -1,0 +1,4 @@
+1. Drupal 7 has no instantaneous updates; the page cache in Drupal 8 or higher is instantly updated when something has changed.
+2. Drupal 7 required the entire page cache to be cleared whenever any content was modified; Drupal 8 or higher uses [cache tags](https://www.drupal.org/docs/8/api/cache-api/cache-tags "Cache tags | Drupal 8 guide on Drupal.org") to only clear the cached pages that depend on the modified content.
+3. Drupal 7 kept serving outdated pages in many cases; any module (and even parts of Drupal 7 core) failed to clear the page cache.
+4. Drupal 7's internal page cache is not enabled by default. Many users don’t know they should enable this. Drupal 8 or higher enables page cache for anonymous users by default. It can do this, thanks to the cache tags mentioned in the previous point. In Drupal 7, having the internal page cache enabled by default would have caused broken behavior (precisely because we did not have cache tags in Drupal 7).

@@ -1,0 +1,1 @@
+See Twig's [dump function documentation](https://twig.symfony.com/doc/1.x/functions/dump.html) to learn more about the dump function.

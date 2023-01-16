@@ -1,0 +1,1 @@
+The [Claro Distribution](https://github.com/zolhorvath/clarodist) can be used for Claro theme development. It includes a dashboard with a variety of markup generator modules for theme components, along with tests.

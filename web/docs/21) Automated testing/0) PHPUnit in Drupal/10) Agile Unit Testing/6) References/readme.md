@@ -1,0 +1,1 @@
+This page book is taken from <http://sourceforge.net/adobe/cairngorm/wiki/BestPracticesAgileUnitTesting>, where you may have a look at the original paper. All the credits should go to them.

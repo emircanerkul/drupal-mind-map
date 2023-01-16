@@ -1,0 +1,1 @@
+The Drupal core issue [Release Drupal 9 on June 3 2020](https://www.drupal.org/project/drupal/issues/3007300) is used to track all the steps (and their substeps) to make Drupal 9 happen.

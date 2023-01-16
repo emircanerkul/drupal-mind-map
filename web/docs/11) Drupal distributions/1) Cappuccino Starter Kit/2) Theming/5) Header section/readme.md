@@ -1,0 +1,1 @@
+The "Header configuration" site settings can be created or edited under admin/content/site-settings. At the first creation the Drupal cache needs to be emptied for the header section to appear. If the logo in the "Header configuration" is empty, then the system will create an empty placeholder link with "logo" class that the theme can use to show an svg file.

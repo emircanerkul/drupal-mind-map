@@ -1,0 +1,11 @@
+Let’s say that you have _content type A_ in your Drupal 7 site with fields _foo_, _bar,_ and _baz_. Let’s also say that you want to rename the field _baz_ to _zot_. These kinds of changes are quite simple to do when you are [migrating using drush](https://www.drupal.org/node/2350651). 
+
+* Create the migrations using `drush migrate:upgrade --configure-only` as instructed on the page linked above.
+* Run the node type and field migrations. This will generate _content type A_ and fields _foo_, _bar,_ and _baz_.
+* Manually create field _zot_ on the destination site. Delete the field _baz_ that the migrations created but which you are not planning to use.
+* The contributed [Migrate Plus](https://www.drupal.org/project/migrate%5Fplus) module allows migration plugins to be implemented as configuration entities, allowing them to flexibly be loaded, modified, and saved. The individual migrations generated with `drush migrate:upgrade --configure-only` can now be inspected by navigating to admin/config/development/configuration/single/export and by selecting 'Migration' as the Configuration type. Select the migration for _Nodes (A)_.
+* Copy-paste the migration to admin/config/development/configuration/single/import but change the field mapping so that the destination field will be _field\_zot_ but you still map the source from _field\_baz_. The exact content of the migration definition will depend on the field type. To understand the anatomy of the migrations, please refer to the [examples provided in the Migrate API documentation](https://www.drupal.org/node/2917492).
+* Once you have imported the modified migration, you can run the migration for A nodes with Drush and verify that the data was migrated to field _zot_ correctly.
+* Repeat the mapping change for Node revisions (A) migration if you're planning to also migrate node revisions.
+
+Another way to achieve the same result is to manually create the new field _zot_ as described above and alter the field mapping of _Nodes (A)_ migration by implementing [hook\_migration\_plugins\_alter()](#s-hook-migration-plugins-alter).

@@ -1,0 +1,3 @@
+Edit your project and find the "Drupal 9 plan" field on the editing form. Inform users about your plans for your Drupal 9 process using that field. The entered text will appear on the project page. There are some suggested text snippets for projects that need funding or suggest replacements.
+
+The contributor guide has some excellent tips at [Help contributed modules prepare for Drupal 9](https://www.drupal.org/node/3032484) to help guide your contributors help you best. Send that page to contributors with information on your preferred approach to the process (eg. how to split fixing various deprecations into issues) so that contributors can be most effective in helping you.

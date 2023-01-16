@@ -1,0 +1,3 @@
+For a local directory, you should be able to make the path in the CSV the absolute local path (e.g. /Users/username/Documents/WebsiteImages on OSX or if you're on Windows C:\\Users\\username\\Documents\\WebsiteImages).
+
+Otherwise, another thing you could do is put the files somewhere in your local website's public files directory (i.e. sites/default/files), then your paths in the CSV can use the public:// stream wrapper to reference the files. So for example, let's say you wanted to import a file named document.pdf. You could put that file in sites/default/files/import-sources/document.pdf, and then in your csv the source path would be public://import-sources/document.pdf.

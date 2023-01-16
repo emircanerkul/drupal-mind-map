@@ -1,0 +1,1 @@
+* [Creating a page controller](https://www.drupal.org/node/2282025) (includes a routing example)

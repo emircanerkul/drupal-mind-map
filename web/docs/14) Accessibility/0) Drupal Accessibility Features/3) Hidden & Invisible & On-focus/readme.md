@@ -1,0 +1,1 @@
+We have continued to improve our [centralized alternative to CSS display:none;](https://www.drupal.org/docs/accessibility/hide-content-properly). Drupal has standardized on the naming convention used in [HTML 5 Boilerplate](https://html5boilerplate.com/).

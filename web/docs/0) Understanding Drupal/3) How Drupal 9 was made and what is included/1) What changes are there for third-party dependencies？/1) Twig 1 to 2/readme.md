@@ -1,0 +1,1 @@
+Drupal 8 depends on Twig 1\. While there is no clear end of life date published yet, Twig 2 has been released for years. Drupal 8.7.0 was released with [optional support for Twig 2](https://www.drupal.org/project/drupal/issues/2572605) and Drupal 9 will depend on Twig 2.

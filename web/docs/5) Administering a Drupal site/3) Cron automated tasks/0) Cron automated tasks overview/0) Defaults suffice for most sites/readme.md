@@ -1,0 +1,1 @@
+The standard default cron settings suffice for most Drupal sites. Current Drupal installs with an "automated cron" module built into core. By default, which you don't need to change. It executes cron about every three hours, more or less depending on your website traffic level.

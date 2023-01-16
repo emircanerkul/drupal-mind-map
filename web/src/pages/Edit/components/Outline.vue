@@ -9,12 +9,6 @@
     >
       <span class="customNode" slot-scope="{ node, data }">
         <span
-          class="nodeEdit"
-          :key="getKey()"
-          contenteditable="false"
-          @keydown.stop
-          @keyup.stop
-          @blur="onBlur($event, node)"
           v-html="node.label"
         ></span>
       </span>
@@ -84,6 +78,7 @@ export default {
 .customNode {
   width: 100%;
   overflow-x: auto;
+  font-size: 10pt;
 
   &::-webkit-scrollbar {
     width: 7px;

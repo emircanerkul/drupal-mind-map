@@ -1,0 +1,1 @@
+_A detailed example of how to migrate a Drupal 6 configuration variable to a Drupal 8 configuration object is provided in [Migrating configuration entities](https://www.drupal.org/docs/8/api/migrate-api/migrate-destination-plugins-examples/migrating-configuration-entities)._

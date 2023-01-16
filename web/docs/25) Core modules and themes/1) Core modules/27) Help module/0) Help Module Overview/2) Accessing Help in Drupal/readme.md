@@ -1,0 +1,1 @@
+![](https://www.drupal.org/files/help_access_1.jpg)The help text provided via the Help module (via help hooks in each individual module) displays a brief explanation of various settings, uses, and configuration options, to help guide administrators and users. Administrators cannot alter the help system's text, as it is built into each module's code.

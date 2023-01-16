@@ -1,0 +1,5 @@
+* Before installing your custom migration module, make sure all the generated migration configs from `drush migrate:upgrade --configure-only` are deleted (Run `drush config:export`, delete the `migrate_plus.*` config files and run `drush config:import`).
+* Now install your custom migration module and all your filtered YML files from your modules `config/install` folder gets installed.
+* Now run `drush migrate:import --group=your_module --continue-on-failure` to run your migration.  
+   * Note, that if you are using the [Migrate Tools](https://www.drupal.org/project/migrate%5Ftools) module, you can run `drush migrate:tree` to output the migration dependency tree. But generally, the `drush migrate:import --group=your_module --continue-on-failure` command will run the migrations in the correct order specified by the migration YML's "migration\_dependencies" entry.
+* As you proceed with adding more files to your module's config/install directory, re-read the directory with something like `drush config-import --partial --source=modules/custom/your_module/config/install`.

@@ -1,0 +1,6 @@
+The migration process does **not** automatically install modules on the Drupal destination site. Only migrations relevant for modules installed on both the source and destination site will be executed. Therefore you need to first enable all core and contributed modules on the Drupal site for which you want to migrate configuration and content from the source site.
+
+A couple of examples:
+
+* If you have the [Addressfield](https://www.drupal.org/project/addressfield) module enabled on your source Drupal 7 site and want to migrate the address data, you must enable the [Address](https://www.drupal.org/project/address) module on your Drupal destination site before beginning the upgrade process. This is a good example where the modules do not map 1:1 between Drupal 7 and later versions of Drupal. However, the Address module provides the migrate plugins that are needed to migrate the data from Drupal 7 Addressfield.
+* If you have the Drupal 7 core Forum module enabled on your source site, you must enable the core Forum module on your Drupal destination site before beginning the upgrade process.

@@ -1,0 +1,1 @@
+You can learn more about Drupal's best practices for coding standards and security on this page: <https://www.drupal.org/developing/best-practices>.

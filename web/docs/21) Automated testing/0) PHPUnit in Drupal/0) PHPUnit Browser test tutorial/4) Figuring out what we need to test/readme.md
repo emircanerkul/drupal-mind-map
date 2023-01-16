@@ -1,0 +1,3 @@
+If you install the Rules module, you can manually go through the steps and see what you think needs to be tested.
+
+Visit _Configuration > Workflow > Rules_ where you should see a page saying "There is no Reaction Rule yet." in the table of rules. You could add Rules and configure them, but as a first step, we want to test that this admin overview page actually exists and says that there are no rules yet.

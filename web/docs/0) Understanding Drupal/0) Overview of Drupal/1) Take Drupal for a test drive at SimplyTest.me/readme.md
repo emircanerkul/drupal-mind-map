@@ -1,0 +1,3 @@
+We love Drupal and we hope you will, too. You can test-drive a newly installed Drupal site on your own in less than a few minutes at [SimplyTest.me](https://simplytest.me/project/drupal "   This link opens in a new tab/window. ") (Link opens in a new tab/window.) After a few clicks, you'll have access to a full Drupal installation to evaluate. To learn more about customizing your Drupal evaluation installation on simplytest.me, consult their [question & answer page](https://simplytest.me/qa).
+
+Note: The evaluation site will expire after 12 hours.

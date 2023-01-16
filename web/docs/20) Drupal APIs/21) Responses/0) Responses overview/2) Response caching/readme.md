@@ -1,0 +1,1 @@
+See [CacheableResponseInterface](/developing/api/8/response/cacheable-response-interface).

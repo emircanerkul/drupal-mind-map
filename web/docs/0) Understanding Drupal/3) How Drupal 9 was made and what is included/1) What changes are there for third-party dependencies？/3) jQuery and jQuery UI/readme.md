@@ -1,0 +1,1 @@
+We [re-evaluated our dependency on jQuery UI](https://www.drupal.org/project/drupal/issues/3051352) and are removing most components from core since it is an "Emeritus Project" (end-of-life). A limited number of components will remain as forked versions that can be patched for any security issues. Drupal 9 will still depend on jQuery itself.

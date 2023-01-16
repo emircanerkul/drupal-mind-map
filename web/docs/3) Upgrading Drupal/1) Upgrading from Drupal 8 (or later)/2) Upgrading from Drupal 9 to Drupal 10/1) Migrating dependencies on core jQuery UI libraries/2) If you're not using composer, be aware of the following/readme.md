@@ -1,0 +1,1 @@
+Be sure to install the recommended releases for any of the modules mentioned above. This means the core `jquery_ui` module must be 1.6 or newer, and all other jQuery UI modules must be version 2.0 or newer.

@@ -1,0 +1,1 @@
+Comprehensive use of cache contexts across Drupal allows Drupal to ship with its [Dynamic Page Cache](https://www.drupal.org/documentation/modules/smart%5Fcache) enabled by default. (Previously known as 'Smart Cache')

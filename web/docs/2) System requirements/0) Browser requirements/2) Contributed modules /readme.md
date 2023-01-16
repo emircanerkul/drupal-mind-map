@@ -1,0 +1,1 @@
+Some contributed modules and themes may not be compatible with all browsers. If you find a problem with browser compatibility in a contributed module or theme, or some functionality in a contributed module that does not work at all without JavaScript enabled, please [submit an issue](/node/add/project%5Fissue) to report it to the module or theme maintainer.

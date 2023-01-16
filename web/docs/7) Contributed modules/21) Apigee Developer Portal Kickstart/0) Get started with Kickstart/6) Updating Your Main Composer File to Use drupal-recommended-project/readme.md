@@ -1,0 +1,6 @@
+When you run `composer install`, Composer will download and install the **[apigee/devportal-kickstart-project-composer](https://github.com/apigee/devportal-kickstart-project-composer)** project. The **apigee/devportal-kickstart-project-composer** project is based on **[drupal-composer/drupal-project](https://github.com/drupal-composer/drupal-project)**, but as of April 9, 2020, **[drupal/recommended-project](https://github.com/drupal/recommended-project)** is used as a starting point (see [PR#24 for details](https://github.com/apigee/devportal-kickstart-project-composer/pull/24)). If your project was created before April 9 2020, you may want to consider replacing your main Composer file with the latest version. To use the latest version:
+
+1. Backup your original `composer.json` file.
+2. Copy over the [latest composer.json](https://github.com/apigee/devportal-kickstart-project-composer/blob/8.x/composer.json) file from **apigee/devportal-kickstart-project-composer.**
+3. Re-add any Drupal modules to the new `composer.json` file or changes you made from the backup `composer.json` file. It may be useful to [view the diff of changes moving to the **drupal/recommended-project composer** file.](https://github.com/apigee/devportal-kickstart-project-composer/compare/661edb0%5E...661edb0)
+4. Run `composer update --with-dependencies --optimize-autoloader`.

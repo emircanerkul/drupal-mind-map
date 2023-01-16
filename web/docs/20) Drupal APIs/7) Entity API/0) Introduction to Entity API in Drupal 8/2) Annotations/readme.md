@@ -1,0 +1,1 @@
+When creating a new entity type, you'll need to use the annotations system built into core. Annotations look like docblock comments above the class, but are parsed and cached by Drupal core. In a lot of ways annotations replace some of the older style hooks used in Drupal 7.

@@ -1,0 +1,4 @@
+| Function/Filter               | 8.x-1.x                                                   | 8.x-2.x                                          | Module               |
+| ----------------------------- | --------------------------------------------------------- | ------------------------------------------------ | -------------------- |
+| Configuration from Config API | {% set settings \= load\_config('system.site', 'mail') %} | {{ bamboo\_config\_get('system.site', 'mail') }} | Bamboo Twig - Config |
+| Configuration from State API  | {% set settings \= load\_state('system.cron\_last') %}    | {{ bamboo\_state\_get('system.cron\_last') }}    | Bamboo Twig - Config |

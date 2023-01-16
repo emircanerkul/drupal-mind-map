@@ -1,10 +1,8 @@
 <template>
   <div class="editContainer">
     <div class="mindMapContainer" ref="mindMapContainer"></div>
-    <Count v-if="!isZenMode"></Count>
     <Navigator :mindMap="mindMap"></Navigator>
     <NavigatorToolbar :mindMap="mindMap" v-if="!isZenMode"></NavigatorToolbar>
-    <Outline :mindMap="mindMap"></Outline>
     <Theme :mindMap="mindMap"></Theme>
     <Structure :mindMap="mindMap"></Structure>
     <ShortcutKey></ShortcutKey>
@@ -20,10 +18,8 @@
 
 <script>
 import MindMap from '@emircanerkul/simple-mind-map'
-import Outline from './Outline'
 import Theme from './Theme'
 import Structure from './Structure'
-import Count from './Count'
 import NavigatorToolbar from './NavigatorToolbar'
 import ShortcutKey from './ShortcutKey'
 import Contextmenu from './Contextmenu'
@@ -42,10 +38,8 @@ import { mapState } from 'vuex'
 export default {
   name: 'Edit',
   components: {
-    Outline,
     Theme,
     Structure,
-    Count,
     NavigatorToolbar,
     ShortcutKey,
     Contextmenu,
@@ -182,25 +176,6 @@ export default {
 
     /**
      * @Author: 王林
-     * @Date: 2021-08-01 10:19:07
-     * @Desc: 存储数据当数据有变时
-     */
-    bindSaveEvent() {
-      if (this.openTest) {
-        return
-      }
-      this.$bus.$on('data_change', data => {
-        storeData(data)
-      })
-      this.$bus.$on('view_data_change', data => {
-        storeConfig({
-          view: data
-        })
-      })
-    },
-
-    /**
-     * @Author: 王林
      * @Date: 2021-08-02 23:19:52
      * @Desc: 手动保存
      */
@@ -235,9 +210,7 @@ export default {
           }
         }
       })
-      this.mindMap.keyCommand.addShortcut('Control+s', () => {
-        this.manualSave()
-      })
+
       // 转发事件
       ;[
         'node_active',
@@ -257,7 +230,6 @@ export default {
           this.$bus.$emit(event, ...args)
         })
       })
-      this.bindSaveEvent()
     },
 
     /**
@@ -271,7 +243,6 @@ export default {
       } else {
         this.mindMap.setData(data)
       }
-      this.manualSave()
     },
 
     /**

@@ -1,0 +1,3 @@
+1. Download Zen from <https://drupal.org/project/zen>
+2. Unpack the downloaded file, take the entire `zen` folder and place it in your Drupal installation under `themes/`. Alternative installation folders can be used; for more information read the sites/example.sites.php file in your Drupal installation.
+3. Log in as an administrator on your Drupal site and go to the Appearance page at `admin/appearance`. If you installed the theme properly, you will see the Zen theme listed under the heading "Uninstalled theme".

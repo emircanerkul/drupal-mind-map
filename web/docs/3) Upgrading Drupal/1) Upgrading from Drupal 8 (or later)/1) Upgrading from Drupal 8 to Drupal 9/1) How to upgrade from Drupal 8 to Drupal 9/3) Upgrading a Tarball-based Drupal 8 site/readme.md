@@ -1,0 +1,3 @@
+Upgrading a tarball-based site from Drupal 8 to Drupal 9 with Drush requires an older version of Drush: Drush 8\. See [Update core via Drush](https://www.drupal.org/docs/8/update/update-core-via-drush) for instructions on how to do this.
+
+As of Drupal 9.4 sites built with tarball or zip file archives will no longer receive the same level of security support for core dependencies. Sites built with tarball or zip files should [convert to using drupal/core\-recommended](https://www.drupal.org/docs/user%5Fguide/en/install-composer.html#s-converting-a-previously-downloaded-site-to-use-composer) to apply security updates more promptly than the above timeframe.

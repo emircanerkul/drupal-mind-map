@@ -1,0 +1,3 @@
+The Typed Data API was created to provide developers with a consistent way of interacting with data in different ways. Not only does the API allow you to interact with the actual data, it also provides means of fetching more information, or metadata, about the actual data.
+
+The Typed Data API is a low level, generic and reusable object oriented API that appears at multiple levels of the Drupal 8 architecture. Take for example, the EntityAdapter, which extends TypedData and acts as a wrapper for an Entity. Or FieldItemBase, which is an unwrapped extension of TypedData.

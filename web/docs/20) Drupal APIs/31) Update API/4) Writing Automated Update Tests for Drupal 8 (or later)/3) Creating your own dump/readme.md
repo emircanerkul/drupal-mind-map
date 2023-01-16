@@ -1,0 +1,2 @@
+1. Install Drupal 8 with standard profile and site name "Site-Install". Take into account that the installation should NOT have the update you are testing, so remove or comment your `hook_update_N` implementation before installing.
+2. Create a dump with `php ./core/scripts/db-tools.php dump-database-d8-mysql | gzip > YOUR_MODULE_PATH/tests/fixtures/update/YOUR_DUMP_NAME.php.gz`

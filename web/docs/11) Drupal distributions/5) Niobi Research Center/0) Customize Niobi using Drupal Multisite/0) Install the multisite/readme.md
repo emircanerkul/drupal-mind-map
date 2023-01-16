@@ -1,0 +1,1 @@
+Full instructions for setting up a multisite, namely setting up sites.php, etc. can be found in <https://www.drupal.org/docs/8/multisite> .

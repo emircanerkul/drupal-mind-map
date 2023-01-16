@@ -1,0 +1,25 @@
+---
+url: >-
+  https://www.drupal.org/docs/comparison-of-contributed-modules/comparison-of-date-time-and-event-modules/module
+description: >-
+  Feature DateTime Range (Core) Date Recur Smart Date Recurring Events DateTime
+  Extras Date Ranges Yes Yes Yes Yes Yes All Day Events No Yes Yes No* No Event
+  Timezones No No Yes No No Natural Language Date Formats No Yes Yes No No* (see
+  #2834016) Recurring Dates No Yes Yes Yes No Registration No No No Yes No
+  FullCalendar View Support Yes Yes Yes Yes Yes Views Support Yes Yes Yes Yes
+  Yes Revisionable Yes Yes Yes Yes Yes Translatable Yes Yes Yes Yes Yes
+published_time: '2021-04-17T15:58:23+00:00'
+modified_time: '2021-05-13T00:33:04+00:00'
+---
+| Feature                                                                         | DateTime Range (Core) | [Date Recur](https://www.drupal.org/project/date%5Frecur) | [Smart Date](https://www.drupal.org/project/smart%5Fdate) | [Recurring Events](https://www.drupal.org/project/recurring%5Fevents) | [DateTime Extras](https://www.drupal.org/project/datetime%5Fextras) |
+| ------------------------------------------------------------------------------- | --------------------- | --------------------------------------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| Date Ranges                                                                     | Yes                   | Yes                                                       | Yes                                                       | Yes                                                                   | Yes                                                                 |
+| All Day Events                                                                  | No                    | Yes                                                       | Yes                                                       | No\*                                                                  | No                                                                  |
+| Event Timezones                                                                 | No                    | No                                                        | Yes                                                       | No                                                                    | No                                                                  |
+| Natural Language Date Formats                                                   | No                    | Yes                                                       | Yes                                                       | No                                                                    | No\* (see [#2834016)](/node/2834016)                                |
+| Recurring Dates                                                                 | No                    | Yes                                                       | Yes                                                       | Yes                                                                   | No                                                                  |
+| Registration                                                                    | No                    | No                                                        | No                                                        | Yes                                                                   | No                                                                  |
+| [FullCalendar View](https://www.drupal.org/project/fullcalendar%5Fview) Support | Yes                   | Yes                                                       | Yes                                                       | Yes                                                                   | Yes                                                                 |
+| Views Support                                                                   | Yes                   | Yes                                                       | Yes                                                       | Yes                                                                   | Yes                                                                 |
+| Revisionable                                                                    | Yes                   | Yes                                                       | Yes                                                       | Yes                                                                   | Yes                                                                 |
+| Translatable                                                                    | Yes                   | Yes                                                       | Yes                                                       | Yes                                                                   | Yes                                                                 |

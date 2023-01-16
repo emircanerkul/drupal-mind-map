@@ -1,0 +1,3 @@
+If you have previously installed an Apigee Kickstart site, you can still set up Monetization for use with a Monetization-enabled Apigee org. See [Install the Apigee Monetization module](https://www.drupal.org/docs/8/modules/apigee-monetization/install-the-apigee-monetization-module) for details.
+
+**Note**: If you would like to use the "Add Credit" functionality to enable developers to add credit to their balance through your Kickstart portal, follow the steps outlined in [Enable the Apigee Monetization Add Credit Module](https://www.drupal.org/docs/8/modules/apigee-monetization/enable-the-apigee-monetization-add-credit-module). The “Add Credit” products must be manually configured in a module installation of Monetization.

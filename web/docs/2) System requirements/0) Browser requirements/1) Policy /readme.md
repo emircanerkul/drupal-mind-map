@@ -1,0 +1,4 @@
+* Drupal accepts bug reports for supported browsers.
+* Contributors manually test significant changes in multiple browsers to watch for regressions, but this is somewhat based on the contributors available and the particular issue. We do not yet have full automated browser testing for our supported browsers.
+* By default, Drupal core does not accept bug fixes to unsupported browsers. Committers and the security team will assess the risk on a case-by-case basis and make exceptions to this rule when needed.
+* Drupal can start using any given browser feature once all the supported browsers have either native support or a polyfill. In each major release, polyfills that are no longer needed (because all supported browsers have added the feature natively) will be removed.

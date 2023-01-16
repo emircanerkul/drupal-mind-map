@@ -1,0 +1,1 @@
+Navigate to your site's 'Appearance' page, which causes your site to recognize that your Zen subtheme is ready to use.

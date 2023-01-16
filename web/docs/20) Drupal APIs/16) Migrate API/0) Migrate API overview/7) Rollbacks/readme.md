@@ -1,0 +1,1 @@
+It is quite typical that when developing a migration, the first version does not provide correct results for all scenarios. Rollbacks allow you to undo a migration, adjust the migration and then execute it again.

@@ -1,0 +1,1 @@
+We are available on Slack. Visit <https://www.drupal.org/slack> to see how you can join Drupal Slack. After that you can find us in the #opensocial channel. Our team will be available to answer your questions there.

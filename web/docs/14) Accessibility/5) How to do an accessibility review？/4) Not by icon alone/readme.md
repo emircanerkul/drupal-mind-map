@@ -1,0 +1,1 @@
+If an icon represents an essential part of functionality, it should be accompanied by text that describes its purpose. Make sure interactive elements such as navigation menus are labelled. Not every user understands the icons that are obvious to you. A label is also needed for screen readers to be able to read out the element.

@@ -1,0 +1,1 @@
+HTTP is all about requests and responses. Drupal represents the responses it sends as `Response` objects. Drupal’s responses are [Symfony Response objects](http://symfony.com/doc/current/components/http%5Ffoundation/introduction.html#response). Symfony’s documentation also applies to Drupal.

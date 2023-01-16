@@ -1,0 +1,1 @@
+Drupal uses a lot of Symfony code. The end of life date for Drupal 9 is when Symfony 4 reaches its end of life in [November 2023](https://symfony.com/roadmap/4.4). 

@@ -1,0 +1,5 @@
+BrowserTestBase gives you a way to test web-based behaviors and interactions. For instance, if you want to verify that a certain permission is required before a user can visit a certain page, you'd create a user without that permission and try to visit the page, and then compare the result to another attempt with that permission.
+
+BrowserTestBase fills a need to perform top-level, request-based tests of integrations between various subsystems in Drupal. Generally, BrowserTestBase tests should not require site-specific themes or configuration, although it's possible to write tests with those requirements. Other tools such as Behat could be used for site-specific behavioral tests.
+
+Finally, BrowserTestBase replaces the legacy Simpletest-based WebTestBase. If you are migrating away from Drupal's Simpletest, you should find it relatively easy to convert WebTestBase tests to BrowserTestBase.

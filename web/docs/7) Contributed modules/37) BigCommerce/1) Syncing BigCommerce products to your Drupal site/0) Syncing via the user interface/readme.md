@@ -1,0 +1,3 @@
+Visit `admin/commerce/config/bigcommerce/product_sync` on your site. On this page you will find a button labelled "Sync products from BigCommerce". When this button is clicked 0 progress bar will appear and a batch will process the import.
+
+This page also contains a details section that shows the status of all the different bigcommerce imports. If there are any updates available from BigCommerce there will be a message informing the user.

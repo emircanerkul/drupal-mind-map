@@ -1,0 +1,5 @@
+Install any of the payment gateways that are available for use with Drupal Commerce, including Stripe, Square, and more. See [Available payment gateways](https://docs.drupalcommerce.org/commerce2/developer-guide/payments/available-gateways) in the Drupal Commerce documentation. Payment gateways can be [on-site or off-site](https://docs.drupalcommerce.org/commerce2/developer-guide/payments/create-payment-gateway).
+
+To install one or more payment gateways, see [Installing and configuring a payment gateway](https://docs.drupalcommerce.org/commerce2/developer-guide/payments/install-configure-gateways) in the Drupal Commerce documentation.
+
+**Note**: In addition to supporting a payment gateway, for prepaid billing you can use self-managed (manual) payment processing, as described in [Configure a payment gateway](#configure-a-payment-gateway).

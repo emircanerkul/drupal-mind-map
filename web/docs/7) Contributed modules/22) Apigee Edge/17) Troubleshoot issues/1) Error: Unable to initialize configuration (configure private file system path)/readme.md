@@ -1,0 +1,1 @@
+Before you can configure the connection to Apigee Edge, you must configure your private file path in the `sites/default/settings.php` file and ensure it is writeable by Drupal. See [Configure the private file system path](configure-the-connection-to-apigee-edge#configure-private-file).

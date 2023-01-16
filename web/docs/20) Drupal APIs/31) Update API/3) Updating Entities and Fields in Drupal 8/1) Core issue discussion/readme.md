@@ -1,0 +1,1 @@
+A discussion to add helpers for better fields DX into core can be found here: [#937442: Field type modules cannot maintain their field schema (field type schema change C(R)UD is needed)](https://www.drupal.org/project/drupal/issues/937442 "Status: Needs work")

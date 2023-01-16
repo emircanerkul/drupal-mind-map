@@ -1,0 +1,3 @@
+Enable the new theme in Chrome, and using Chrome developer tools check inspect > console. You should see Powered by AMP ⚡ HTML. That means that Google now knows this is intended to be an AMP page. That does NOT mean that it is valid AMP.
+
+If your page is invalid, you'll see a series of warnings in the console that describe the problems that need to be fixed. There might still be javascript on the page, or the css might be too big, or the page might include invalid elements because you didn't use the AMP formatters. You'll have to step through the problems and fix them until you achieve valid AMP.

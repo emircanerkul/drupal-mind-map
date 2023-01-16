@@ -1,0 +1,9 @@
+* [**details**](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Render%21Element%21Details.php/class/Details/9.2.x): The `'#type' => 'details'` element is a grouping element with a summary.
+* [**vertical\_tabs**](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Render%21Element%21VerticalTabs.php/class/VerticalTabs/): The `'#type' => 'vertical_tabs'` element allows grouping of fields in vertical tabs.
+* **language\_select**: The `'#type' => 'language_select'` element is a language selector to make it easy to put language configuration on forms.
+* [**dropbutton**](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Render%21Element%21Dropbutton.php/class/Dropbutton): The `'#type' => 'dropbutton'` provides a generic select list with a dropbutton. See also the `'#type' => 'operations'` element.
+* [**operations**](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Render%21Element%21Operations.php/class/Operations): The `'#type' => 'operations'` element provides a list of available operations, which you can commonly find in entity configuration administrative screens, such as at _admin/structure/types_.
+* **[entity\_autocomplete](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Entity%21Element%21EntityAutocomplete.php/class/EntityAutocomplete):** The `'#type' => 'entity_autocomplete' `element allow to select an entity of a specific type.
+
+Check out [namespace Drupal\\Core\\Render\\Element](https://api.drupal.org/api/drupal/namespace/Drupal%21Core%21Render%21Element/8) for all the core provided elements.  
+You can also get a relevance list on the the [Elements API page](https://api.drupal.org/api/drupal/elements).

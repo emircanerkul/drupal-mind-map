@@ -1,0 +1,3 @@
+* [Dries Buytaert's State of Drupal](https://dri.es/state-of-drupal-presentation-april-2019) at DrupalCon Seattle included various details about Drupal 9 and his [DrupalCon Amsterdam 2019 keynote](https://youtu.be/XX5oJVuapA0?t=1221) showed the process form the point of view of a Drupal user.
+* [Lullabot interviewed Angie Byron, Nathaniel Catchpole and Gábor Hojtsy about Drupal 9](https://www.lullabot.com/podcasts/lullabot-podcast/drupal-9-webchick-gabor-catch) in April 2019.
+* [Dries Buytaert and Gábor Hojtsy held an Acquia webinar](https://www.acquia.com/resources/webinars/drupal-9-coming-soon-how-should-you-prepare) about Drupal 9 in April 2019.

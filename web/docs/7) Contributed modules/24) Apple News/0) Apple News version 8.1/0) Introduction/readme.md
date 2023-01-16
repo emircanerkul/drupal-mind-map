@@ -1,0 +1,1 @@
+Apple News module allows integrating content managed in Drupal to [Apple News](https://www.apple.com/news/), a news publishing platform using the [APIs](https://developer.apple.com/documentation/apple%5Fnews/apple%5Fnews%5Fapi) provided by Apple.

@@ -1,0 +1,3 @@
+* [CacheableMetadata](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Cache%21CacheableMetadata.php/class/CacheableMetadata/8)
+* [BubbleableMetadata](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Render%21BubbleableMetadata.php/class/BubbleableMetadata/8)
+* [CacheableResponseInterface](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Cache%21CacheableResponseInterface.php/interface/CacheableResponseInterface/8)

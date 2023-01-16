@@ -1,0 +1,3 @@
+**[Anu LMS](https://www.drupal.org/project/anu%5Flms)** can be installed in Drupal 9.3 or later.
+
+It requires the following contrib modules: [ECK](https://www.drupal.org/project/eck), [Field Group](https://www.drupal.org/project/field%5Fgroup), [Inline Entity Form](https://www.drupal.org/project/inline%5Fentity%5Fform), [Paragraphs](https://www.drupal.org/project/paragraphs), [Paragraphs Selection](https://www.drupal.org/project/paragraphs%5Fselection), [Paragraphs Browser](https://www.drupal.org/project/paragraphs%5Fbrowser), [REST Entity Recursive](https://www.drupal.org/project/rest%5Fentity%5Frecursive), [Weight](https://www.drupal.org/project/weight).

@@ -1,0 +1,5 @@
+JavaScript makes it possible to dynamically change parts of a page without fully reloading it. Users who cannot fully see these changes still need to be aware they’ve occurred. Examples of dynamic changes to a page are updating a list of search results on the fly or displaying a discrete notification which does not require user interaction. [Drupal.announce() API](https://www.drupal.org/docs/8/api/javascript-api/accessibility-tools-for-javascript-in-drupal-8) provides a way to announce dynamic content changes on some assistive technologies.
+
+Drupal.announce() is an API built on top of [ARIA live regions](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA%5FLive%5FRegions). Some example use cases for this can be found in this [documentation about ARIA live region roles](//developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA%5FLive%5FRegions#Preferring%5Fspecialized%5Flive%5Fregion%5Froles”).
+
+The best way to test dynamically changing content is to use a screen reader.

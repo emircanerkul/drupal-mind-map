@@ -1,0 +1,5 @@
+**[Backup your site, and test your backup](https://www.drupal.org/docs/contributed-modules/backup-and-migrate/how-to-for-backup-and-migrate "How to for Backup and Migrate | Drupal guide on Drupal.org")** to see that it works before you use a module that you have not used before, especially if it is an 'Other releases' or 'Development releases' version that has not yet been released as being suitable for a live website.
+
+Before using a contrib module that you have not used before, you should always back up your site first, in particular, your database with a record of which version of Drupal core that was used with that database.
+
+Also, critically, you should always test the contrib module on a test site (also known as a 'development' site), not on a live site (also known as a 'production' site), just in case the module breaks your site.

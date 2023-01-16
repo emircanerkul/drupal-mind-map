@@ -1,0 +1,1 @@
+[Examples for more advanced password hash migrations.](https://www.drupal.org/docs/8/api/migrate-api/migrate-destination-plugins-examples/migrating-users-advanced-password)

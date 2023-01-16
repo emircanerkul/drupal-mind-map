@@ -1,0 +1,1 @@
+No. Manual installs still work.

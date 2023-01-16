@@ -1,0 +1,3 @@
+For Apigee Edge-connected portals, you can define the labels, text, and button names on the Purchase rate plan and the Cancel rate plan forms by selecting **Configuration > Apigee Edge > Monetization > Rate plan purchases** and clicking the **Rate plan purchase settings** tab. Configure the labels, text, and button names, as shown in the following figure.
+
+![](https://www.drupal.org/files/label-button.png)

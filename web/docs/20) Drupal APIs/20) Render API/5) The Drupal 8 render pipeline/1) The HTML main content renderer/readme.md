@@ -1,0 +1,18 @@
+> _This can be considered the HTML main content render pipeline, but it really is just embedded within the Drupal render pipeline (see above)._
+
+The above is the high-level flow. But let's take a look at the HTML main content renderer ([HtmlRenderer](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Render%21MainContent%21HtmlRenderer.php/class/HtmlRenderer/8)), because that will be used most often.
+
+1. `HtmlRenderer::prepare()` receives the main content render and ensures we have a `'#type' => 'page'` render array (which corresponds to `<body>`):  
+   1. if the main content render array already is `'#type' => 'page'`, then we're done  
+   2. otherwise, we need to build that `'#type' => 'page'` render array. The [RenderEvents::SELECT\_PAGE\_DISPLAY\_VARIANT](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Render%21RenderEvents.php/constant/RenderEvents%3A%3ASELECT%5FPAGE%5FDISPLAY%5FVARIANT/8) event is dispatched, to select a page display variant.  
+         * By default, [SimplePageVariant](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Render%21Plugin%21DisplayVariant%21SimplePageVariant.php/class/SimplePageVariant/8) is used, which doesn't apply any decorations.  
+         * But, when the Block module is enabled, [BlockPageVariant](https://api.drupal.org/api/drupal/core%21modules%21block%21src%21Plugin%21DisplayVariant%21BlockPageVariant.php/class/BlockPageVariant/8) is used, which allows the site builder to place blocks in any of the page regions, and hence "decorate" the main content.  
+         * Drupal 8 modules can subscribe to this event as well, and use a different page variant, even on a per-route basis. (Panels, Page Manager etc. can be cleanly implemented thanks to this event.)
+2. `HtmlRenderer::prepare()` now is guaranteed to be working on a `'#type' => 'page'` render array. [hook\_page\_attachments()](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Render%21theme.api.php/function/hook%5Fpage%5Fattachments/8) and [hook\_page\_attachments\_alter()](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Render%21theme.api.php/function/hook%5Fpage%5Fattachments%5Falter/8) are invoked. (For attaching page-level assets, that aren't bound to a specific page.)
+3. `HtmlRenderer::renderResponse()` uses the `'#type' => 'page'` render array returned by the previous step and wraps it in `'#type' => 'html'`. [hook\_page\_top()](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Render%21theme.api.php/function/hook%5Fpage%5Ftop/8) and [hook\_page\_bottom()](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Render%21theme.api.php/function/hook%5Fpage%5Fbottom/8) are invoked.
+4. [Renderer](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Render%21Renderer.php/class/Renderer/8) (formerly `drupal_render()`) is called on the `'#type' => 'html'` render array, which uses the `html.html.twig` template and the return value is a HTML document as a string.
+5. This HTML string is returned as the `Response` (specifically, a `HtmlResponse` object, which is a more specialized subclass of `Response`).
+
+Steps 1–2 generate the `<body>` (`page.html.twig`). Steps 3–4 generate the `<html>` (`html.html.twig`). Step 5 sends a `Response` object containing the generated `<html>`.
+
+_Note: render arrays remain arrays and thus aren't rendered until step 4 above!_

@@ -1,0 +1,1 @@
+Once the object has been fully normalized, it is an array ready to be encoded. To determine the encoder to use, the Serializer uses the same process. It iterates through the list of Encoders, calling `EncoderInterface::supportsEncoding($format)` until it finds one which supports the format.

@@ -1,0 +1,1 @@
+If you execute migrations using Drush, you can print debug information using `drush_print()` (Drush 8) or `Drush::output()->writeln(...);` (Drush 9+). This can be included for example in the `prepareRow()` method of the source plugin. 

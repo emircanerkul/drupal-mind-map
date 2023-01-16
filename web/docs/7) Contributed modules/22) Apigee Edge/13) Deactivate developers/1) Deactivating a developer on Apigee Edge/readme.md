@@ -1,0 +1,3 @@
+After you disable a developer on Apigee Edge, the developer will not be able to log into Apigee Edge. The developer will be able to log into the developer portal, but assigned API keys will no longer be valid. The developer will be notified on the My Apps page.
+
+To disable a developer on Apigee Edge, see [Deactivating a developer](https://docs.apigee.com/api-platform/publish/adding-developers-your-api-product#deactivatingadeveloper).

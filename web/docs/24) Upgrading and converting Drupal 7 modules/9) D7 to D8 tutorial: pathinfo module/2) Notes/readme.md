@@ -1,0 +1,6 @@
+* Use the [Drupal 8 change records](http://drupal.org/list-changes/drupal?to%5Fbranch=8.x) as your reference when upgrading.
+* Now that Drupal runs on top of Symfony, a lot of core functionality is provided by services, which are managed by a [Symfony Service Container](http://symfony.com/doc/2.0/book/service%5Fcontainer.html). You can read about that in more detail in [Change Notice: Use Dependency Injection to handle global PHP objects](http://drupal.org/node/1539454).
+* The root [Drupal](http://api.drupal.org/api/drupal/core%21lib%21Drupal.php/class/Drupal/8) class has a static method to help you access available services: [Drupal::service()](http://api.drupal.org/api/drupal/core%21lib%21Drupal.php/function/Drupal%3A%3Aservice/8)
+* A handy way to see which services are available is `debug(drupal_container()->getServiceIds());`
+
+I have to admit, somewhat embarrassingly, that the module worked almost perfectly after my first commit above. Drupal 8 still has many Drupal 7 API calls intact, but I wanted to upgrade it to use D8 paradigms, so I kept going.

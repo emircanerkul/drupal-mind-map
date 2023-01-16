@@ -1,0 +1,1 @@
+Previously to alter template suggestions, you altered `$variables['theme_hook_suggestion']` and `$variables['theme_hook_suggestions']` in preprocess functions to introduce theme suggestions. Since Drupal 8, modules and themes now define and alter theme suggestions in their own dedicated hooks.

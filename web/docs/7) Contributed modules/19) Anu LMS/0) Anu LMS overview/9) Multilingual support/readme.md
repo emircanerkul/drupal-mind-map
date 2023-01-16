@@ -1,0 +1,1 @@
+Content translation (including RTL languages) is fully supported.

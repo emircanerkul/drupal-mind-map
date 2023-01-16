@@ -1,0 +1,1 @@
+Each paragraph has its own module, and they are prefixed with the "pt" string (for example: ino\_pt\_card for the Card paragraph type). Some of them include a "templates" folder, which contains twig files that the paragraph uses for render. These twig files can be overridden in the theme.

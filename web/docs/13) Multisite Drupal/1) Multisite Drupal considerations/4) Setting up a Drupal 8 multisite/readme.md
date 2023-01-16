@@ -1,0 +1,1 @@
+If you want to set up your Drupal sites in a multisite configuration, start [here](https://www.drupal.org/docs/8/multisite).

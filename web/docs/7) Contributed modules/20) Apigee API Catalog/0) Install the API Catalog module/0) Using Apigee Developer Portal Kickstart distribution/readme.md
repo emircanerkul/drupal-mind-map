@@ -1,0 +1,1 @@
+If you have installed your developer portal site using the [Kickstart](https://www.drupal.org/project/apigee%5Fdevportal%5Fkickstart) distribution, the Apigee API Catalog module has already been downloaded with all of its dependencies as part of the Kickstart installation script.

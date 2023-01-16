@@ -1,0 +1,1 @@
+Refer to [Running PHPUnit tests](https://www.drupal.org/docs/8/phpunit/running-phpunit-tests) documentation page on how to execute the tests locally.

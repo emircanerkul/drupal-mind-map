@@ -1,0 +1,3 @@
+When you initially created your custom module, you might have used Drupal's default @Plugin annotation type in your plugins, although this is [not recommended](https://www.drupal.org/docs/8/api/plugin-api/annotations-based-plugins). Now that you want to add additional keys, set defaults or simply document the annotation keys you are using, you discover you can't. You want to switch to your own annotation class @MyPlugin, but can't do so either, at least not immediately, to avoid breaking backwards-compatibility for custom plugins your users might have created.
+
+Find out more about how to phase in your own Annotation type in [Create your own custom annotation class](https://www.drupal.org/node/3044251).

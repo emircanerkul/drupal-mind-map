@@ -1,0 +1,3 @@
+* ["The 'Key' to Drupal Security"](https://pantheon.io/blog/key-drupal-security) blog post written by one of the developers of the Lockr service.
+* "[Symmetric vs. Asymmetric Encryption: What's the Difference?](https://www.trentonsystems.com/blog/symmetric-vs-asymmetric-encryption)" blog post by Trenton Systems.
+* ["Best practices for securely using API keys"](https://support.google.com/googleapi/answer/6310037?hl=en) from Google.

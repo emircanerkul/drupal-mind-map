@@ -1,0 +1,9 @@
+Here are some examples of Foundation 6 and it’s application to Drupal 8.
+
+1. Foundations [XY Grid](https://foundation.zurb.com/sites/docs/xy-grid.html) (as well as the legacy [Flex Grid](https://foundation.zurb.com/sites/docs/flex-grid.html) and [Float Grid](https://foundation.zurb.com/sites/docs/grid.html)) allows you to easily lay out any Drupal content in limitless configurations.
+2. Foundation's [Top Bar](https://foundation.zurb.com/sites/docs/top-bar.html) is combined with Drupal's menu navigation and works with sub-menus and sticky navigation.
+3. Foundation's [Off Canvas](https://foundation.zurb.com/sites/docs/off-canvas.html) regions are available as Drupal block regions, and any Menu Blocks placed in those regions will automatically be themed with sub-menu support.
+4. Drupal's Status Messages are displayed by default in a Foundation [Callout](https://foundation.zurb.com/sites/docs/callout.html), but can also be displayed in a Modal window. Both can be closed and removed from the DOM after being displayed.
+5. A [Drush command for creating sub-themes](https://www.drupal.org/docs/8/modules/zurb-foundation-user-guide/zurb-foundation-8x-6x/using-drush-to-install-zurb) is available for quickly spinning up subthemes as needed (like Drupal Console for subthemes).
+
+One of the greatest advantages of Foundation over its responsive rivals (Bootstrap, Skeleton, Susy, Less Framework, HTML5 Boilerplate, the list goes on) is [its super-easy-to-use documentation](https://foundation.zurb.com/sites/docs/). The Drupal ZURB Foundation theme leverages this documentation as closely as possible.

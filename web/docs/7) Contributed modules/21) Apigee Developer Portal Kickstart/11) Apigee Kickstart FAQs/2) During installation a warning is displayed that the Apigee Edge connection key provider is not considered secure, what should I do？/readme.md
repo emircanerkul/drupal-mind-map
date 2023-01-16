@@ -1,0 +1,10 @@
+The Apigee Edge connection settings are stored using the [Drupal Key module](https://www.drupal.org/project/key) to store Apigee Edge connection settings. The Apigee Edge credentials are stored as a key in the Key module, which has a concept of a **key provider** setting that determines how the key is stored. However, in a default Drupal installation only the **configuration** key provider is available, which is what we use to store Edge credentials during Apigee Kickstart installation.
+
+The configuration key provider stores the data in Drupal's configuration, is not considered secure due to the following reasons:
+
+* Drupal configuration is stored in the database and is easily exported as files, which means your credentials will be available in the exported files and any database backups made of the site.
+* SQL injection attacks are a main source of security vulnerabilities, which means your credentials could be exposed if your site becomes compromised.
+
+The [Apigee Edge module has documentation on the Key module integration](//www.drupal.org/docs/8/modules/apigee-edge/configure-the-connection-to-apigee-edge#configure-credential-storage) that goes into detail on different key providers available.
+
+An easy option to make your credentials secure are to store the information out of the database and in a file location outside the web root of your site. Once you [configure the Drupal private filesystem](https://www.drupal.org/docs/8/modules/apigee-edge/configure-the-connection-to-apigee-edge#configure-private-file "configure private filesystem") you can [change the key provider](https://www.drupal.org/docs/8/modules/apigee-edge/configure-the-connection-to-apigee-edge#s-update-the-key-provider "change the key provider") to use the private filesystem to store your Edge credentials.

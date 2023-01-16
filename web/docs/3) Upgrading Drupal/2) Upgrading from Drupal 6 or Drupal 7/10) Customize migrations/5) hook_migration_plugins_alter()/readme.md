@@ -1,0 +1,3 @@
+Another way to customize the migrations is to implement [hook\_migration\_plugins\_alter()](https://api.drupal.org/api/drupal/core%21modules%21migrate%21migrate.api.php/function/hook%5Fmigration%5Fplugins%5Falter) in your custom module.
+
+As described in the API documentation, this hook has one argument which is an associative array of all discovered migrations. You can alter the migrations or remove migrations that you don't want to be executed.

@@ -1,0 +1,2 @@
+* [Quick Edit: in-place editing of entities](/documentation/modules/quickedit)
+* [Drupal 8: best authoring experience for structured content?](http://wimleers.com/article/drupal-8-structured-content-authoring-experience)

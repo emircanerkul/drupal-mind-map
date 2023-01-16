@@ -1,0 +1,1 @@
+We're presently using fieldsets for radios & checkboxes now in the Form API. This is a big step toward further enhancing forms in Drupal. It is also now used in the advanced search.

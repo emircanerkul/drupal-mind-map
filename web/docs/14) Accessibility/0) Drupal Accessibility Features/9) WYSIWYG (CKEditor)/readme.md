@@ -1,0 +1,1 @@
+By default the Basic HTML text format is set up to support author accessibility. Authors can headings, starting with an H2\. This facilitates good semantic structure for the content. Furthermore, for images, alt text is required by default. This can be disabled by an administrator, but the default content types support authoring best practices. 

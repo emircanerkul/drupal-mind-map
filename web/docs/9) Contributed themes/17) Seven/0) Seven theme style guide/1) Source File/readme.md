@@ -1,0 +1,3 @@
+The Source file is PSD (Photoshop CS6 recommended). This can be useful to designers of interfaces for contributed modules. Since it is too large to attach here, you may download it here:
+
+Seven Elements (23MB): [https://drive.google.com/file/d/0BwPrMtcLgOljZkxiek05ZU5adnM/view?usp=sh...](https://drive.google.com/file/d/0BwPrMtcLgOljZkxiek05ZU5adnM/view?usp=sharing "https://drive.google.com/file/d/0BwPrMtcLgOljZkxiek05ZU5adnM/view?usp=sharing")

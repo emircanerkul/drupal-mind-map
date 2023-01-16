@@ -1,0 +1,1 @@
+The Rules module provides a user interface for administrators where they can create rules. It consists of multiple pages and forms that we want to test, which are protected with user permissions so only admins can access them. The most simple test scenario is in rules/tests/src/Functional/UiPageTest.php.

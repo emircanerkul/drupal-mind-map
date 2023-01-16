@@ -1,0 +1,1 @@
+Note that Admin Menu Swap does not control permissions for user roles. So, if a user does not have permission to view a page that is in their admin menu, it will not appear for them. Also note that this does not prevent users from visiting admin pages they have access to, if they access it in a way other than the admin menu.

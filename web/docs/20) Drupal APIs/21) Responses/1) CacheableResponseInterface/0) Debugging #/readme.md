@@ -1,0 +1,3 @@
+You can debug cacheable responses (responses that implement this interface, which may be cached by Page Cache or Dynamic Page Cache) by setting the `http.response.debug_cacheability_headers` container parameter to `true`, in your `services.yml`. Followed by a container rebuild (e.g. drush cache:rebuild), which is necessary when changing a container parameter.
+
+That will cause Drupal to send `X-Drupal-Cache-Tags`, `X-Drupal-Cache-Contexts` and `X-Drupal-Cache-Max-Age` ([introduced in version 9.1](https://www.drupal.org/node/3151292)) headers.

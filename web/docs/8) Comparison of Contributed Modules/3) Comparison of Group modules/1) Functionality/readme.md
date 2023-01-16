@@ -1,0 +1,10 @@
+Both packages have similar functionality in the table below, the differences are from the architecture. This table notes differences based on final D7\. User means ordinary user, of course a dev ops user can extend either package.
+
+| [Group](https://www.drupal.org/project/group)  | [Organic Groups](https://www.drupal.org/project/og)                                                      |                                                             |
+| ---------------------------------------------- | -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| Users can create groups                        | No, admin or specifically granted permission to create new groups, coding of group entities.             | No, admin/granted designation of nodes as group content.    |
+| Users can become members of multiple groups    | with inheritance or by separate joining                                                                  | by access to the designated nodes                           |
+| Content can belong to multiple groups          | content independent of group unless a gnode                                                              | content is the group                                        |
+| Groups can be private                          | all groups are invite only or programmatically assigned                                                  | by node permission                                          |
+| Groups can have sub groups                     | built-in                                                                                                 | separately developed module                                 |
+| Roles and permissions can be managed per group | built-in as described in Architecture above and/or extend with roles module(s) and group\_membership.inc | via og\_membership.inc and at module, node permission level |

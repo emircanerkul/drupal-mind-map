@@ -1,0 +1,3 @@
+| Function/Filter                | 8.x-1.x                                              | 8.x-2.x                                                                      | Module                             |
+| ------------------------------ | ---------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------- |
+| Format date using Drupal i118n | {{ node.changed.value\|date\_format('d M, h:i A') }} | {{ node.changed.value\|bamboo\_i18n\_format\_date('custom', 'd M, h:i A') }} | Bamboo Twig - Internationalization |

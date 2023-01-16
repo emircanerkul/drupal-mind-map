@@ -1,0 +1,3 @@
+We create designs with [Figma](https://www.figma.com/) because it allows several people to interact at the same time, leave comments and share links online.
+
+The [Design System figma file](https://www.figma.com/file/OqWgzAluHtsOd5uwm1lubFeH/Drupal-Design-system?node-id=5585%3A11386) contains the components, while the [Claro UI figma file](https://www.figma.com/file/NpZUAp8BEkMJvm5gKBCDBB/Claro?version-id=1038365409&node-id=5585%3A11386) includes the UI Examples for the Claro Theme (based on the components of the Design System. 

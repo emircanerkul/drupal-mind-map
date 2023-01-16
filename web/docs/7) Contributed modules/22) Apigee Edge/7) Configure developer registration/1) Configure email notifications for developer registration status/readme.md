@@ -1,0 +1,3 @@
+Configure the behavior for notifying users of their developer registration status using your [Drupal account settings](https://www.drupal.org/docs/user%5Fguide/en/config-user.html). These settings enable you customize emails sent to registered developers upon account approval, activation, cancellation, or other actions, based upon the settings chosen.
+
+To configure email notifications, select **Configuration > People > Account Settings**.

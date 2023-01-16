@@ -1,0 +1,3 @@
+To contribute to development, you should download Drupal using `git`. There is an entire section of documentation for using [git with Drupal](/documentation/git), but you can find the basic instructions by visiting the [project page for Drupal](/project/drupal) and opening the [Version control](/project/drupal/git-instructions) tab.
+
+**Note:** if you install Drupal with `git`, then make sure to read the page "[Install dependencies with composer](https://www.drupal.org/docs/8/install/step-2-install-dependencies-with-composer)" in this guide.
