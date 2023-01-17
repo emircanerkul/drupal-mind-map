@@ -5,6 +5,7 @@ const markdownIt = require('markdown-it');
 const markdownItPrism = require('markdown-it-prism');
 const lazy_loading = require('markdown-it-image-lazy-loading');
 const mila = require("markdown-it-link-attributes");
+const { argv } = require("yargs");
 
 module.exports = {
     chainWebpack: config => {
@@ -28,8 +29,9 @@ module.exports = {
                 }
             })
     },
-    publicPath: isDev ? '' : './',
-    outputDir: '../docs',
+    filenameHashing: false,
+    publicPath: isDev ? '' : argv.fordrupal ? '/modules/custom/mindmap/dist/' : './',
+    outputDir: argv.fordrupal ? '../dist': '../docs',
     lintOnSave: false,
     productionSourceMap: false,
     configureWebpack: {

@@ -18,6 +18,10 @@ Click [here](https://www.drupal.org/project/mindmap) to visit Drupal Module page
 * `npm link simple-mind-map`
 * `npm run serve`
 
+## Build
+
+* **For Anywhere**: `npm run build`
+* **For Drupal Module**: `npm run dbuild`
 
 ## Special Note & Thanks
 
