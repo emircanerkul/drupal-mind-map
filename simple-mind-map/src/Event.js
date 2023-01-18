@@ -161,7 +161,10 @@ class Event extends EventEmitter {
    */
   onMousewheel(e) {
     let foreignObject = e.target.closest('foreignObject');
-    if (foreignObject != null && foreignObject.scrollHeight > foreignObject.clientHeight) return
+    if (foreignObject != null) {
+      let scrollableArea = foreignObject.querySelector('div>div');
+      if (scrollableArea.scrollHeight > scrollableArea.clientHeight) return
+    }
     e.stopPropagation()
     e.preventDefault()
     let dir

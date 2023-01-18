@@ -198,6 +198,7 @@ export default {
         el: this.$refs.mindMapContainer,
         data: root,
         layout: layout,
+        scaleRatio: 0.025,
         theme: theme.template,
         themeConfig: theme.config,
         viewData: view,

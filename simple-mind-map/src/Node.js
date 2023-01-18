@@ -434,31 +434,45 @@ class Node {
 
     let div = document.createElement('div')
     div.innerHTML = this.nodeData.data.text
+    let wrapperDiv = document.createElement('div')
 
     let fO = new ForeignObject()
-
-    fO.width("400px")
-    fO.height("300px")
-    fO.node.style.overflowY = 'auto'
-    fO.node.style.overflowX = 'hidden'
-    fO.node.style.paddingRight = '10px'
-    fO.node.style.padding = '5px 10px'
-    // fO.node.style.boxShadow = '0 14px 28px rgba(0,0,0,0.25)'
     fO.node.style.color = this.getStyle('color', this.isRoot, this.nodeData.data.isActive)
-    // fO.node.style.borderRadius = `${this.getStyle('borderRadius', this.isRoot, this.nodeData.data.isActive)}px`
-    
-    if (this.isRoot){
+
+    let viewNode = SVG(iconsSvg.view).size(20, 20).attr('cursor', 'pointer').addClass('view')
+
+    viewNode.on('click', () => {
+      this.nodeData.data.view = !this.nodeData.data.view;
+      this.mindMap.reRender();
+      this.renderNode();
+    });
+
+    if (this.nodeData.data.view) {
+      fO.width("700px")
+      fO.height("400px")
+    } else {
+      fO.width("400px")
+      fO.height("300px")
+    }
+
+    if (this.isRoot) {
       let svg = document.createElement('div');
       svg.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="180px" height="180px" viewBox="0 0 623.71387 474.82906"><title>Risorsa 22</title><g id="Livello_2" data-name="Livello 2"><g id="Livello_1-2" data-name="Livello 1"><path d="M292.12129,345.00234h-26.212l.04275,49.04508c0,14.33211-6.14488,25.92692-20.477,25.92692-14.33924,0-20.54117-11.59481-20.54117-25.92692V345.04868H198.78953l-.00713,48.99874c0,28.32213,18.20655,51.27636,46.53223,51.27636,28.31849,0,46.79948-22.95423,46.79948-51.27636Z" style="fill:#fff"/><rect x="528.48024" y="315.11614" width="26.08367" height="127.67755" style="fill:#fff"/><polygon points="573.823 319.826 573.823 315.239 594.15 315.239 594.15 319.826 586.715 319.826 586.715 340.043 581.261 340.043 581.261 319.826 573.823 319.826" style="fill:#fff"/><polygon points="604.673 315.24 610.476 332.295 610.544 332.295 616.029 315.24 623.714 315.24 623.714 340.044 618.606 340.044 618.606 322.465 618.535 322.465 612.458 340.044 608.252 340.044 602.175 322.64 602.103 322.64 602.103 340.044 596.999 340.044 596.999 315.24 604.673 315.24" style="fill:#fff"/><path d="M177.46784,343.93624c-22.48375-5.18962-36.66617,17.148-37.25785,18.34557-.28871.58814-.2994.93035-1.29384.90533-.82337-.01773-.916-.90533-.916-.90533l-2.79086-17.08726H111.84157v97.51614h26.19419v-52.784c0-4.3128,11.61256-24.993,34.11766-19.67153,11.38088,2.69467,16.21054,7.52436,16.21054,7.52436V348.07087a41.85,41.85,0,0,0-10.89612-4.13463" style="fill:#fff"/><path d="M353.05258,368.64446a26.13539,26.13539,0,1,1-26.13,26.13,26.13748,26.13748,0,0,1,26.13-26.13M327.664,474.82906V439.74191l.00712.00718.00713-13.14169s.03921-1.05141.98729-1.06218c.84474-.01066,1.03368.549,1.24041,1.06218,1.98529,4.94369,12.90641,23.76689,37.14374,17.86435A51.631,51.631,0,1,0,301.402,394.77446v80.0546Z" style="fill:#fff"/><path d="M492.37655,394.77479a26.13539,26.13539,0,1,1-26.1336-26.13,26.139,26.139,0,0,1,26.1336,26.13m-.74494,47.9793H517.8935v-47.9793a51.62918,51.62918,0,1,0-65.64764,49.69381c24.23739,5.906,35.15845-12.92066,37.14374-17.86087.20673-.5132.39208-1.07284,1.24041-1.06566.94808.01425.98729,1.06566.98729,1.06566" style="fill:#fff"/><path d="M36.905,337.16373h-10.529v83.26605l10.81417.278c22.18076,0,36.46656-2.01733,36.46656-41.90208,0-38.24519-12.61057-41.642-36.75172-41.642m-7.1108,105.38619H0V315.0649H31.96836c38.70852,0,68.06785,7.10374,68.06785,63.74083,0,56.09518-31.09872,63.74419-70.24206,63.74419" style="fill:#fff"/><path d="M336.513,60.04433C316.67656,40.21728,297.75071,21.31654,292.11812,0c-5.63286,21.31654-24.56176,40.21728-44.39487,60.04433-29.74983,29.731-63.47995,63.42669-63.47995,113.96434a107.878,107.878,0,1,0,215.756,0c0-50.53435-33.72736-84.23329-63.48628-113.96434M230.09481,199.146c-6.61462-.22461-31.02654-42.30194,14.26152-87.1038l29.96891,32.73593a2.56174,2.56174,0,0,1-.20005,3.82276c-7.15132,7.33453-37.63207,37.90055-41.42061,48.46955-.782,2.18152-1.92407,2.099-2.60977,2.07556m62.02662,55.45668a37.10175,37.10175,0,0,1-37.102-37.102c0-9.39381,3.73446-17.765,9.24757-24.50685,6.68995-8.18054,27.84947-31.18907,27.84947-31.18907s20.83558,23.34627,27.79953,31.111a36.28369,36.28369,0,0,1,9.30744,24.58494,37.10209,37.10209,0,0,1-37.102,37.102m71.01314-60.16628c-.79965,1.74885-2.61363,4.66848-5.062,4.75761-4.36413.15894-4.83045-2.07721-8.05609-6.8511-7.08179-10.47987-68.88406-75.07043-80.44365-87.56214-10.16779-10.987-1.43181-18.733,2.62052-22.79219,5.084-5.09314,19.92417-19.92418,19.92417-19.92418s44.24974,41.984,62.6825,70.67071,12.08027,53.50972,8.33451,61.70129" style="fill:#fff"/></g></g></svg>`;
-      svg.style.width = 
-      fO.node.style.textAlign = 'center'
-      fO.add(svg).add(div);
-    } else{
-      fO.add(h1).add(div)
+      svg.style.textAlign = 'center'
+      svg.style.alignItems = 'center'
+      svg.appendChild(div)
+      fO.add(svg)
+
+      setTimeout(() => {
+        div.scrollBy({ behavior: 'smooth', top: 1000 });
+      }, 5000);
+    } else {
+      wrapperDiv.appendChild(h1)
+      wrapperDiv.appendChild(div)
+      fO.add(viewNode).add(wrapperDiv)
     }
 
     g.add(fO)
-
     let { width, height } = g.bbox()
     return {
       node: g,
@@ -562,7 +576,7 @@ class Node {
                 `
         document.body.appendChild(this.noteEl)
       }
-      this.noteEl.innerText = this.nodeData.data.note
+      this.noteEl.innerHTML = this.nodeData.data.note
     }
     node.on('mouseover', () => {
       let { left, top } = node.node.getBoundingClientRect()
@@ -819,7 +833,7 @@ class Node {
    * @Date: 2021-04-07 13:55:58
    * @Desc: 递归渲染
    */
-  render(callback = () => {}) {
+  render(callback = () => { }) {
     // 节点
     if (this.initRender) {
       this.initRender = false
